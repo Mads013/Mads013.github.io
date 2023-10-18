@@ -1,0 +1,98 @@
+/*var(--property-name)
+     insert the value of a custom property
+     You define a custom property within the :root
+     when you use the var() property it will pull from the root.
+
+
+1. What are at least two reasons why it's important to create a style guide?
+    Having a style guide creates a consistent and cohesive layout across the 
+    website/ pages. This can help to unify decisions into a single source, 
+    which can be handy when working on a project with multiple people
+
+
+2. What are the five elements that go into a typical website style guide? 
+    A website style guide uses typography, color palette, layout and spacing rules, 
+    icon style, and guidelines for illustrations and imagery.
+
+
+3. Who is the audience for the style guide?
+    The audience for the style guide includes web designers, developers, content 
+    creators, web users, etc; It's a reference for maintaining brand consistency,
+    in which the brand is created for the audience and the stye but the style guide
+    is a guideline for designers to follow.
+
+
+4. What is the more robust form of a style guide called and how is it different?
+    The most robust form of a style guide is a design system. It’s a documentation that 
+    has the design guide in it, but it’s more specific in details. It includes every rule 
+    and element. The style guide comes first, then the design system.
+
+
+5. What types of elements are you designing styles for in step 8 of the article? 
+    In step 8, you are designing a lot of different buttons. 
+    The styles for main website components such as buttons, form fields, form elements, 
+    navigation menus, notifications and alerts, cards, modals, and more, specify their 
+    appearance, sizes, and states for consistency and cohesive design.
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* Color Palette */
+    :root {
+                --primary-color: #3498db;
+                --secondary-color: #ff9a36;
+                --White: #fff;
+                --Black: #000000;
+            }
+  
+  /* Fonts and Sizes */
+         h1 {
+                font-family: Impact, 'Arial Narrow Bold', sans-serif;
+                font-size: 50px;
+            }
+            
+         h2 {
+                font-family: 'Arial Narrow Bold ', sans-serif;
+                font-size: 30px;
+            }
+            
+        h3 {
+                font-family: 'Arial Narrow Bold', sans-serif;
+                font-size: 20px;
+            }
+            
+        p {
+                font-family: 'Arial Narrow Bold', sans-serif;
+                font-size: 16px;
+            }
+  
+ /* Button Styles */
+.button {
+    padding: 10px 20px;
+    font-family:sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--White); 
+  }
+  
+  .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--Black);
+  }
+  
+  /* Additional Button Style */
+  .button-primary {
+    background-color: var(--primary-color);
+    color: var(--White);
+  }
