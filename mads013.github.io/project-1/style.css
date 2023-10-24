@@ -1,14 +1,18 @@
 * {
     box-sizing: border-box;
   }
+
+
   body {margin:0;}
-  img {
-    width:100%;
-  }
-  a {
-    text-decoration:none;
-  }
-  header {
+  
+    img {width:100%;
+        }
+
+  
+    a {
+       text-decoration:none;
+        }
+     header {
     background-image: url(images/hero.jpg);
     /* background-image: url('images/hero.png'); */
     background-size:cover;
@@ -99,16 +103,39 @@
 .dessert-page header {
   background-image: url('images/tiramasu.jpg');
   background-size:cover;
-  image: contain 50%;
+  background-size: contain;
   height:80vh;
   width:100vw;
 }
 
   /* For the main cours page */
-  .homepage-main-course-page header {
+  .main-course-page header {
     background-image: url('images/chicken2.jpg');
     background-size:cover;
   height:80vh;
   width:100vw;
   }
+  
+/* Styles for the home button */
+.button-box {
+  background: transparent; /* Transparent background */
+  display: inline-block;
+  padding: 10px; /* Increase the padding to make it larger */
+  border-radius: 50%; /* Create a round shape */
+  text-align: center;
+}
 
+.button-box img {
+  width: 40px; /* Increase the width to make the image larger */
+  height: 40px; /* Increase the height to make the image larger */
+  display: block; /* Ensure image is centered in the box */
+  margin: 0 auto; /* Center the image horizontally in the box */
+}
+
+/* Change text to white and place it below the image */
+.button-box span {
+  display: block;
+  color: white; /* Change text color to white */
+  font-size: 14px; /* Adjust font size as needed */
+  margin-top: 5px; /* Add some space between the image and text */
+}
