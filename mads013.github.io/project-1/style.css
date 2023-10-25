@@ -47,6 +47,7 @@ header h2 {
       color:#4CAF50
 
   }
+
   
 h1, h2, h3 {
       color: #2196F3;
@@ -76,7 +77,9 @@ h1, h2, h3 {
       border-bottom-left-radius: 50px;
       list-style: none;
   }
- 
+
+
+
 nav ul{
 margin-top:0px;
 }
