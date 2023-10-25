@@ -1,14 +1,12 @@
 * {
       box-sizing: border-box;
-      margin:0;
-      font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
 
  body {
     
       margin:0;
-
+      font-family:Arial, Helvetica, sans-serif
   }
   
 img {
@@ -59,7 +57,19 @@ h1, h2, h3 {
       text-align:center;
   }
 
+.nav-header { 
+display: flex;
+
+}
+
+.nav-header .logo {
+flex: 25%;
+
+}
+
   nav {
+
+      flex:75%;
       width:100%;
       display: flex;
       justify-content:flex-end;
@@ -137,7 +147,7 @@ line-height: 20px;
 font-size: 15px;
 padding: 10px;
 color: #000000;
-font-style:oblique;
+font-weight: 700;
 }
 
 .cards {
@@ -246,17 +256,24 @@ font-style:oblique;
 
     
 .ingredient-description {
-      flex: 1;
-      margin: 10px;
+      display: flex;
+      margin: auto;
+      width:85%; /*account for the padding*/
+
     }
-    
-.ingredient-column {
-      border: 1px solid #501e1e;
-      padding: 20px;
-      background-color: #9fa3c6; 
+
+
+
+    .ingredient-description div{
+
+      flex:1;
+      text-align: center;
+      padding:0 10px;
     }
-    
-.description-column {
-      flex: 1;
-      margin: 10px;
+
+    .ingredient-description ul {
+
+      list-style: none;
+      margin: 0;
+      padding:0;
     }
