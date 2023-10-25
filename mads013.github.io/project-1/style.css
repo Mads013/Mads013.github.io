@@ -1,141 +1,195 @@
 * {
-    box-sizing: border-box;
+      box-sizing: border-box;
+      margin:0;
   }
 
 
-  body {margin:0;}
+ body {
+    
+      margin:0;
+
+  }
   
-    img {width:100%;
+img {
+      width:100%;
         }
 
   
-    a {
-       text-decoration:none;
+a {
+     text-decoration:none;
         }
-     header {
-    background-image: url(images/hero.jpg);
-    /* background-image: url('images/hero.png'); */
-    background-size:cover;
-    height:80vh;
-    width:100vw;
+
+header {
+      background-image: url(images/hero.jpg);
+      /* background-image: url('images/hero.png'); */
+      background-size:cover;
+      height:80vh;
+      width:100vw;
   }
-  header h1 {
-    text-align:center;
-    color: rgb(226, 218, 218);
-    margin:0;
-    line-height: 40px;
+
+header h1 {
+      text-align:center;
+      color: #fff;
+      margin:0;
+      line-height: 120px;
+      font-size: 100px;
   }
-  header h2 {
-    text-align:center;
-    color: white;
-    margin:0;
-    line-height: 40px;
+
+header h2 {
+      text-align:center;
+      color: #fff;
+      margin:0;
+      line-height: 70px;
   }
-  h1, h2, h3 {
-    color: rgb(130, 197, 236);
+  
+  .homepage .special-header{
+      font-size: 50px;
+      color:#4CAF50
+
   }
+  
+h1, h2, h3 {
+      color: #2196F3;
+  }
+
+  
+
   .homepage h1, .homepage h2, .homepage h3 {
-    text-align:center;
+      text-align:center;
   }
+
   nav {
-    width:100%;
-    display: flex;
-    justify-content:flex-end;
+      width:100%;
+      display: flex;
+      justify-content:flex-end;
+      background-color: transparent;
   }
+
   nav ul {
-    padding:10px;
-    padding-left:80px;
-    margin:0;
-    display: flex;
-    justify-content:space-between;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    list-style: none;
+      padding:10px;
+      padding-left:80px;
+      margin:0;
+      display: flex;
+      list-style: none;
+      justify-content:space-between;
+      background-color: #fff;
+      border-bottom-left-radius: 50px;
+      list-style: none;
   }
+ 
+nav ul{
+margin-top:0px;
+}
+
+
+nav li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+
   nav li a {
-    color: rgb(130, 197, 236);
-    padding: 10px 16px;
+      color: #2196F3;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: inline-block;
   }
+
   nav li a:hover {
-    color: rgb(16, 155, 48);
+      color: #4CAF50;
   }
-  .about {
-    text-align:center;
+.about {
+      text-align:center;
   }
-  .about p {
-    width:70%;
-    margin:auto;
+
+ .about p {
+      width:70%;
+      margin:auto;
   }
+
+.cards {
+      display:flex;
+      margin-bottom:0px;
+  }
+
+.card { 
+    
+      flex: 1;}
+    
+.card img {
+      width: 100%; /* Set a fixed width*/
+      max-height: 200px; /* Adjust height*/
+      object-fit: cover; /* Maintain image aspect ratio and cover the container */
+    }
   
-  .cards {
-    display:flex;
-    margin-bottom:20px;
+.card p {
+      margin:0;
+      margin-top: -6px;
+      background: #2196F3;
+      color: #fff;
+      text-align:center;
+      padding: 8px 0;
   }
-  .card { flex:1;}
+
   
-  .card p {
-    margin:0;
-    margin-top: -6px;
-    background: rgb(130, 197, 236);
-    color: white;
-    text-align:center;
-    padding: 8px 0;
-  }
 
 
   /* For the appetizer page */
 .appetizer-page header {
-  background-image: url(images/bread.jpg);
-  background-size:cover;
-  height:80vh;
-  width:100vw;
+      background-image: url(images/bread.jpg);
+      background-size:cover;
+      height:80vh;
+      width:100vw;
 }
 
 /* For the salads page */
 .salads-page header {
-  background-image: url('images/greeksalad.jpg');
-  background-size: contain;
-  height:80vh;
-  width:100vw;
+      background-image: url('images/greeksalad.jpg');
+      background-size: contain;
+      height:80vh;
+      width:100vw;
 }
 
 /* For the dessert page */
 .dessert-page header {
-  background-image: url('images/tiramasu.jpg');
-  background-size:cover;
-  background-size: contain;
-  height:80vh;
-  width:100vw;
+      background-image: url('images/tiramasu.jpg');
+      background-size:cover;
+      background-size: contain;
+      height:80vh;
+      width:100vw;
 }
 
   /* For the main cours page */
-  .main-course-page header {
-    background-image: url('images/chicken2.jpg');
-    background-size:cover;
-  height:80vh;
-  width:100vw;
+.main-course-page header {
+      background-image: url('images/chicken2.jpg');
+      background-size:cover;
+      height:80vh;
+      width:100vw;
   }
   
+
 /* Styles for the home button */
 .button-box {
-  background: transparent; /* Transparent background */
-  display: inline-block;
-  padding: 10px; /* Increase the padding to make it larger */
-  border-radius: 50%; /* Create a round shape */
-  text-align: center;
+      background: transparent; 
+      display: inline-block;
+      padding: 10px; 
+      border-radius: 50%; 
+      text-align: center;
+      margin: 0;
 }
 
 .button-box img {
-  width: 40px; /* Increase the width to make the image larger */
-  height: 40px; /* Increase the height to make the image larger */
-  display: block; /* Ensure image is centered in the box */
-  margin: 0 auto; /* Center the image horizontally in the box */
+      width: 40px; 
+      height: 40px; 
+      display: block; 
+      margin: 0 auto; 
 }
 
-/* Change text to white and place it below the image */
+
 .button-box span {
-  display: block;
-  color: white; /* Change text color to white */
-  font-size: 14px; /* Adjust font size as needed */
-  margin-top: 5px; /* Add some space between the image and text */
+      display: block;
+      color: #fff; 
+      font-size: 14px; 
+      margin-top: 5px; 
 }
