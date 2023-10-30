@@ -6,7 +6,7 @@
  body {
     
       margin:0;
-      font-family:Arial, Helvetica, sans-serif
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   }
   
 img {
@@ -74,16 +74,27 @@ h1, h2, h3 {
   }
 
 .nav-header { 
-display: flex;
+      display: flex;
+      align-items: center;
+      height: 40px; /* height for the bar */
+      justify-content: space-between;
+      padding: 0 20px;
+      background-color:transparent;
 
 }
 
 .nav-header .logo {
-flex: 20px;
-padding-right: 80px;
-background-color: transparent;
+margin-right: 20px;
 
 }
+
+.nav-header .logo img {
+      width: 40px; /* Set the width to match the HTML attribute */
+      height: 90px; /* Set the height to match the HTML attribute */
+
+      background-size:200px;
+      
+    }
 
   nav {
 
@@ -117,6 +128,7 @@ nav li {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 10px;
 }
 
 
@@ -159,10 +171,24 @@ color: #4CAF50;
   
 .recipe {
       text-align: center; 
-      margin: 0 150px;
+      margin: 0 0px;
       padding: 50px;
       
 }
+
+.recipe-idems {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+}
+
+.recipe-item {
+      flex: 1;
+      text-align: center; /* Adjust text alignment as needed */
+}
+
 
 .recipe h2{
 font-size: 30px;
