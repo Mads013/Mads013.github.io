@@ -75,13 +75,14 @@ Page:https://mads013.github.io/home-page-code/
   
   .cards {
     display:flex;
+    padding: 20px;
   }
   .card {
     flex:33.3%;
     background-color:white;
     font-family: 'raleway';
     margin-right:20px;
-    margin-top: 40px;
+    margin-top: 20px;
     padding:16px;
     border-radius: 20px;
   }
@@ -89,6 +90,15 @@ Page:https://mads013.github.io/home-page-code/
     margin-right:0;
   }
   
+  .cards article{
+
+padding-top: 20px;
+
+
+
+  }
+
+
   .card img {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
