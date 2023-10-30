@@ -33,6 +33,7 @@ black: rgba(9, 7, 6, 1);
     font-family: 'raleway';
     font-weight:500;
     font-size: 20px;
+    text-align: center;
     
   }
   .content {
@@ -54,6 +55,7 @@ black: rgba(9, 7, 6, 1);
   h1 {
     color:rgb(255, 61, 229);
     font-size: 60px;
+    text-align: left;
   }
   
   h1, h3 { 
@@ -115,12 +117,15 @@ black: rgba(9, 7, 6, 1);
     margin-top:80px;
     display:flex;
   }
+
+
   .resources div {
     flex:1;
     background-color:white;
     border-radius:20px;
     padding:20px;
     margin-right:20px;
+    text-align: left;
   }
   .resources div:last-child {
     margin-right:0;
