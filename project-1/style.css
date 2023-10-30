@@ -75,22 +75,25 @@ h1, h2, h3 {
 
 .nav-header { 
       display: flex;
+      width:100vw;
       align-items: center;
-      height: 40px; /* height for the bar */
+      height: 50px; /* height for the bar */
       justify-content: space-between;
-      padding: 0 20px;
       background-color:transparent;
-
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
 }
 
 .nav-header .logo {
 margin-right: 20px;
-
+padding: 60px 20px 20px 20px;
 }
 
 .nav-header .logo img {
       width: 40px; /* Set the width to match the HTML attribute */
-      height: 90px; /* Set the height to match the HTML attribute */
+      height: auto; /* Set the height to match the HTML attribute */
 
       background-size:200px;
       
@@ -253,7 +256,12 @@ font-size: 35px;
       padding: 8px 0;
   }
 
-  
+  .homepage header {
+      height:50vh;
+  }
+  .homepage h1 {
+      padding-top:100px;
+  }
   /* For the main course page */
 .main-course-page header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/chicken1.jpg');
@@ -267,7 +275,6 @@ font-size: 35px;
   /* For the appetizer page */
 .appetizer-page header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/bread.jpg);
-      height: 30vw;
       background-position: center;
       background-repeat: no-repeat;
       position: relative;
