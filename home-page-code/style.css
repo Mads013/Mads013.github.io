@@ -40,7 +40,7 @@ black: rgba(9, 7, 6, 1);
     width:80%;
     min-height:80vh;
     margin: 80px auto;
-    background-color: rgba(238, 192, 178, .8);
+    background-color: rgba(238, 192, 178, 0.469);
     border-radius: 20px;
   }
   a {
@@ -52,7 +52,7 @@ black: rgba(9, 7, 6, 1);
       /* Photo by cottonbro studio: https://www.pexels.com/photo/red-and-black-vinyl-record-4836517/ */
   
   h1 {
-    color:#603030;
+    color:rgb(255, 61, 229);
     font-size: 60px;
   }
   
