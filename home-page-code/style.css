@@ -3,17 +3,7 @@ font-family: 'Raleway', sans-serif;
  */
 
  /* COLORS
---sinopia: #C0441Dff;
---licorice: #130906ff;
---pale-dogwood: #EEC0B2ff;
---cinnabar: #DE5D3Dff;
---black: #090706ff;
-
-sinopia: rgba(192, 68, 29, 1);
-licorice: rgba(19, 9, 6, 1);
-pale-dogwood: rgba(238, 192, 178, 1);
-cinnabar: rgba(222, 93, 61, 1);
-black: rgba(9, 7, 6, 1); 
+Page:https://mads013.github.io/home-page-code/
 */
 
 * {
@@ -91,6 +81,7 @@ black: rgba(9, 7, 6, 1);
     background-color:white;
     font-family: 'raleway';
     margin-right:20px;
+    margin-top: 40px;
     padding:16px;
     border-radius: 20px;
   }
