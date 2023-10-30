@@ -1,7 +1,5 @@
 /* 
-font-family: 'Inconsolata', monospace;
-font-family: 'Pixelify Sans', sans-serif;
-font-family: 'Space Mono', monospace;
+font-family: 'Raleway', sans-serif;
  */
 
  /* COLORS
@@ -23,14 +21,17 @@ black: rgba(9, 7, 6, 1);
   }
   img {
     width:100%;
+    height:500px;
+    object-fit:cover;
     
   }
   body {
     margin:0;
-    background-image: url('images/pinball.jpg');
+    background-image: url(images/plant-1.jpg);
     background-repeat:no-repeat;
     background-size:cover;
-    font-family: 'Space Mono', monospace;
+    font-family: 'raleway';
+    font-weight:500;
     font-size: 20px;
     
   }
@@ -43,21 +44,29 @@ black: rgba(9, 7, 6, 1);
     border-radius: 20px;
   }
   a {
-    color: #C0441Dff;
+    color: rgb(15, 57, 46);
   }
   a:hover {
-    color: rgb(135, 31, 191);
+    color: rgb(255, 61, 229);
   }
       /* Photo by cottonbro studio: https://www.pexels.com/photo/red-and-black-vinyl-record-4836517/ */
   
   h1 {
-    color:#333;
+    color:#603030;
     font-size: 60px;
   }
   
-  h1, h2, h3 {
+  h1, h3 { 
+    color:#603030;
     margin-top:0;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'Raleyway';
+    font-weight: 800;
+  }
+
+  h2 {
+
+  color: rgb(11, 120, 96);
+  margin-top:0;
   }
   ul {
     list-style: none;
@@ -65,7 +74,7 @@ black: rgba(9, 7, 6, 1);
   
   ul li::before {
     content: "\2022";
-    color: #C0441Dff;
+    color: rgb(11, 120, 96);
     font-weight: bold;
     display: inline-block; 
     width: 1em;
@@ -78,7 +87,7 @@ black: rgba(9, 7, 6, 1);
   .card {
     flex:33.3%;
     background-color:white;
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'raleway';
     margin-right:20px;
     padding:16px;
     border-radius: 20px;
@@ -94,13 +103,13 @@ black: rgba(9, 7, 6, 1);
   
   .button {
     display: inline-block;
-    background-color: #C0441Dff;
+    background-color:  rgb(11, 120, 96);
     color: white;
     text-decoration:none;
     padding: 8px 12px;
   }
   .button:hover {
-    background-color: #130906ff;
+    background-color: rgb(255, 153, 121);
   }
   .resources {
     margin-top:80px;
