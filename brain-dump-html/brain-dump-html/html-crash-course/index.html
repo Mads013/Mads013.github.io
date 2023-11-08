@@ -99,7 +99,7 @@ li-list     ol-replaces bulleiten points with numbers
 <!--
 Table
 these are the tags for the tables (table (t))head)
-tr-table row    td-actual data
+tr-table row (aligns the data with the set tr)   td-actual data
 
 -->
 <table>
@@ -110,30 +110,157 @@ tr-table row    td-actual data
                 <th>Age</th>
             </tr>
     </thead>
-
+    <tr>
     <tbody>
         <td>Madi Martinez</td>
         <td>Martinezmadi0@gmail.com</td>
         <td>10</td>
-
+    </tr>
         <td>John Doe1</td>
         <td>Martinezma@gmail.com</td>
         <td>15</td>
-
-
+        <tr>
         <td>John Doe 2</td>
         <td>Martinezmadi@gmail.com</td>
-        <td>20</td>
-
+        <td>25</td>
+    </tr>
     </tbody>
-
-
 </table>
 
+<!--
+    Forms- html can create the look but cant add funcionallity ex login form, to make it function you need php or some other language formattiong
+form action=""
+
+action (attribute)-submit form to a 
+        certain page ex php page like a newletter form
+method- is another one its 
+        ussally a post form to add data to a data form
+"GET is sketch"
+
+input- has an attiubute called type because thers a lot of different inputs
+        the name has server site that how it grabs value
+<label> 
+
+<input type> mos commonly the input is going to be text.
+<br>=line break
+<hr> horizontal rule
+<div> are block level elements and will put things on the next line
+
+
+-->
+<br>
+<hr>
+<br>
+
+<form action="process.php" method="GET">
+    <div>
+    <lable>First Name</lable>
+    <input type="text" name="firstname"
+    placeholder="Enter first name">
+    </div>
+ <br>
+
+    <div>
+    <lable>Last Name</lable>
+    <input type="text" name="lastname">
+    </div>
+    <br>
+
+    <div>
+    <lable>Email</lable>
+    <input type="email" name="email">
+    </div>
+    <br>
+
+    <div>
+    <lable>Message</lable>
+<textarea name="message"></textarea>
+    </div>
+    <br>
+
+    <div>
+    <lable>Gender</lable>
+    <select name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    </div>
+    <br>
+    <div>
+        <label>Age:</label>
+        <input type="number" name="age"
+        value="30">
+    </div>
+    <br>
+    <div>
+        <label>Birthday:</label>
+        <input type="date" name="birthday">
+    </div>
+<br>
+<input type="submit" name="submit"
+value="Submit">
+
+
+
+</form>
+<!--You can have buttons here
+In order for a button to do something you need javascript
+-->
+<button>Click Me</button>
+
+<!--Images
+ Its a self closing tab you have to link an image for it to display
+src= source attribute
+the image can find its source; its looking for the folder-location
+alt=attibute displays whatever text is there when the image disapears
 
 
 
 
-    
+-->
+<a href="images/html-page-structure.png">
+<img src="images/html-page-structure.png" alt="My Sample Image"
+width="400px" height="100%">
+</a>
+
+
+<!--Quotations
+block quote, abreviate, site
+
+
+-->
+<blockquote cite="http://google.com">
+
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maiores 
+</blockquote>
+
+<p>The <abbr title="World Wide Web">WWW</abbr>is Awesome</p>
+
+<p><cite>crash course</cite> by Travis</p>
+
+</p>
+
+<!--
+Header-logo, links
+nav-nav bar
+section-copy text on homepage
+article-blog
+aside-sidebar text
+footer-bottom of page
+
+-->
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
