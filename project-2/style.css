@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/homepage/homepage-img-1.jpg);
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  margin: 0; /* Add a colon after margin */
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.image-gallery {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Create four equal columns that sit next to each other */
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 33.33%;
+  padding-left: 10px;
+  padding-right: 10px; /* Change to padding-right */
+  text-align: center;
+  justify-content: center;
+}
+
+.column img {
+  vertical-align: middle;
+  padding-top: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Responsive layout - makes a two-column layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
