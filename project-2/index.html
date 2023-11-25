@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-      
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Paradise Dive & Travel</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
+
 <body>
     <nav class="nav">
         <div class="menu-bar">
             <div class="menu-bar-links">
                 <ul id="navlist">
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#">Pricing</a></li> 
-                    <li><a href="#">Discover</a></li> 
-                    <li><a href="#">Open</a></li> 
-                    <li><a href="#">Advanced</a></li> 
-                    <li><a href="#">Rescue</a></li> 
-                    <li><a href="#">Divemaster</a></li> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Open</a></li>
+                    <li><a href="#">Advanced</a></li>
+                    <li><a href="#">Rescue</a></li>
+                    <li><a href="#">Divemaster</a></li>
                 </ul>
             </div>
-        </div>
 
-        <div class="logo">
-            <a href="/index.html">
-                <img src="images/nav-bar/current-logo.jpg" alt="Ocean Paradise Logo">
-            </a>
-        </div>
-        <div class="clock-location">
-            <a href="#">
-                <img src="images/nav-bar/clock.png" alt="Store Time & Location">
-            </a>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="images/nav-bar/current-logo.jpg" alt="Ocean Paradise Logo">
+                </a>
+            </div>
+
+            <div class="clock-location">
+                <a href="#">
+                    <img src="images/nav-bar/clock.png" alt="Store Time & Location">
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -45,8 +47,57 @@
         </div>
     </header>
 
-<div class="image-gallery">
-        <div class="row"> 
+    <div class="section-one">
+        <div class="intro-title">
+            <h1>Dive and Explore</h1>
+            <div class="intro-paragraph-text">
+                <p>At Ocean Paradise Dive and Travel, we are more than a dive shop – we are a passionate community dedicated to unlocking the wonders of the underwater world. Established with a vision to inspire and facilitate extraordinary underwater adventures, our company stands as a beacon for divers seeking unparalleled experiences. Immerse yourself in a world of knowledge with our comprehensive dive courses. From beginners to advanced certifications, we tailor learning experiences to suit every skill level.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-image-2">
+        <div class="hero-text-2">
+            <h1>Classes</h1>
+        </div>
+    </div>
+
+    <div class="class-image-slideshow">
+        <div class="class-image-slideshow">
+            <div class="slider-container">
+
+
+
+                <div class="slick-slider">
+
+                    <div>
+                        <a href="link"><img src="images/homepage/pool-dive.jpg" alt="Pool Dive"><p>Beginner</p></a>
+                    </div>
+
+                    <div>
+                        <a href="link"><img src="images/homepage/scubadiver-beginner.jpg" alt="Open Water"><p>Open Water</p></a>
+                    </div>
+                    
+                    <div>
+                        <a href="link"><img src="images/homepage/scubadiver-advanced.jpg" alt="Advanced"><p>Advanced</p></a>
+                    </div>
+                    <div>
+                        <a href="link"><img src="images/homepage/scubadiving-rescue.jpg" alt="Rescue"><p>Rescue</p></a>
+                    </div>
+                    <div>
+                        <a href="link"><img src="images/homepage/scubadiving-rescue.jpg" alt="Master"><p>Master</p></a>
+                    </div>
+                </div>
+
+                <div class="slider-arrows">
+                    <button type="button" class="slick-prev">&#9665;</button>
+                    <button type="button" class="slick-next">&#9655;</button>
+                </div>
+
+
+        </div>
+    <div class="image-gallery">
+        <div class="row">
             <div class="column">
                 <img src="images/homepage/turtle.jpg" alt="Turtle" style="width:100%">
                 <img src="images/homepage/dive-trip-personal.jpg" alt="O&P Scuba Trip" style="width:100%">
@@ -66,5 +117,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Include jQuery and Slick Slider JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+
 </body>
+
 </html>
