@@ -1,3 +1,8 @@
+/*
+
+Code for nav bar:
+https://www.codingnepalweb.com/fullscreen-overlay-navigation-menu-bar-html-css*/
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 * {
@@ -51,18 +56,22 @@ padding:0;
   #active:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
-  .wrapper ul{
+  .wrapper ul {
     position: absolute;
     top: 50%;
     left: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    width: 100%; /* Make sure the width is 100% for proper centering */
   }
+  
+  
   .wrapper ul li{
     margin: 15px 0;
   }
-  .wrapper ul li a{
+  .wrapper ul li a {
     color: none;
     text-decoration: none;
     font-size: 30px;
@@ -72,7 +81,10 @@ padding:0;
     position: relative;
     line-height: 50px;
     transition: all 0.3s ease;
+    display: block; /* Make the anchor a block-level element for proper centering */
+    width: 100%; /* Ensure the anchor takes the full width */
   }
+  
   .wrapper ul li a:after{
     position: absolute;
     content: "";
@@ -267,7 +279,7 @@ text-align: right;
   font-size: 32px;
   line-height: 1;
   color: white;
-  background: #333;
+  background: transparent;
   border: none;
   cursor: pointer;
   width: 60px;
