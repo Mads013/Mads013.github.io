@@ -3,12 +3,133 @@
   margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.wrapper {
+    clip-path: circle(75%);
+}
+
+.menu-btn {
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked~.menu-btn {
+    background: #fff;
+    color: #4158d0;
+}
+
+#active:checked~.menu-btn i:before {
+    content: "\f00d";
+}
+
+.wrapper ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.wrapper ul li {
+    margin: 15px 0;
+}
+
+.wrapper ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+
+.wrapper ul li a:after {
+    position: absolute;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.wrapper ul li a:hover:after {
+    transform: scaleY(1);
+}
+
+.wrapper ul li a:hover {
+    color: #4158d0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: #202020;
+}
+
+.content .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #ffffff;
-  background: linear-gradient(to bottom, #a8c8ff, #97B2DF, #092147);
+  background: linear-gradient(to bottom, #97B2DF, #092147);
 }
+
 
 .nav {
   background-color: #092147;
@@ -78,6 +199,7 @@ body {
   padding: 20px;
   text-align: center;
   padding: 10%;
+  margin: 0px 200px  0px 200px;
 }
 
 .intro-title {
@@ -145,9 +267,12 @@ body {
   justify-content: center;
 }
 
-/* Slider Arrows Styles */
+/* Change the layout of slider arrows to flex */
 .slider-arrows {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add some space between the arrows and the slideshow */
 }
 
 .slick-prev,
@@ -161,13 +286,47 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin: 0 10px; /* Adjust the margin between the arrows */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.slider-arrows
+:hover {
+  background-color: #FFA500;
+}
+
 .slick-prev {
   margin-right: 10px;
+}
+
+/* Additional styles to ensure proper positioning */
+.slick-prev:before,
+.slick-next:before {
+  display: none; /* Hide the default arrow content */
+}
+
+
+
+.pricing-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.pricing-button button {
+  padding: 10px 20px;
+  background-color: #000842;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.pricing-button button:hover {
+  background-color: #FFA500;
 }
 
 /* Hero Image 3 Styles */
@@ -333,10 +492,161 @@ body {
 }
 
 .content {
-  position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
   box-sizing: border-box;
 }
+
+.columns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.column-left,
+.column-right {
+  flex-basis: 50%;
+  color: white;
+}
+
+.column-left {
+  padding-right: 20px; /* Add some spacing on the right */
+}
+
+
+/* Adjust the font family and placeholder text */
+.column-left h1,
+.column-left h2,
+.column-left h4 {
+  font-family: Oswald, sans-serif;
+  margin-bottom: 20px; /* Add more spacing between elements */
+  text-align: center;
+}
+
+.column-left h1 {
+  font-size: 65px;
+}
+
+#lname::placeholder {
+  /* Change the placeholder text for the Last Name input */
+  content: 'Email';
+}
+
+@media screen and (max-width: 800px) {
+  .columns-container {
+    flex-direction: column;
+  }
+
+  .column-left,
+  .column-right {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.column-right text{
+
+
+  font-family: Oswald;
+
+}
+
+input[type="text"],
+textarea {
+  font-family: Oswald;
+  letter-spacing:1px;
+  width: 200%; /* Adjusted width to 100% */
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+.button {
+  width: 200px; /* Set a fixed width for all buttons */
+  padding: 15px 0; /* Adjust padding for better appearance */
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #97B2DF;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center; /* Center the text within the button */
+}
+
+.button:hover {
+  background-color: #FFA500;
+}
+
+/* Container styling for the form */
+.container {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Add some top margin to separate from the hero content */
+}
+
+
+.page-bottom {
+  display: flex;
+}
+
+.page-bottom-left-column,
+.page-bottom-right-column {
+  background-color: transparent;
+  color: white;
+  flex: 1; /* Equal width for both columns */
+  margin: 10px; /* Add some margin between columns */
+}
+
+.page-bottom-left-column p {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.171); 
+}
+
+.page-bottom-right-column {
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: flex-start;
+}
+
+.button {
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000842;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.button:hover {
+  background-color: #FFA500;
+}
+
+.hero-image-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/homepage/green-coral.jpg);
+  height: 225px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+}
+

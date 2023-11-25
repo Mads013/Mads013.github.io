@@ -7,22 +7,26 @@
     <title>Ocean Paradise Dive & Travel</title>
     <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
+    <nav>
+    <input type="checkbox" id="active">
+    <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Open</a></li>
+            <li><a href="#">Advanced</a></li>
+            <li><a href="#">Rescue</a></li>
+            <li><a href="#">Divemaster</a></li>
+        </ul>
+    </div>
 
-    <nav class="nav">
-        <div class="menu-bar">
-            <div class="menu-bar-links">
-                <ul id="navlist">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">Open</a></li>
-                    <li><a href="#">Advanced</a></li>
-                    <li><a href="#">Rescue</a></li>
-                    <li><a href="#">Divemaster</a></li>
-                </ul>
+    </div>
             </div>
 
             <div class="logo">
@@ -43,7 +47,7 @@
         <div class="hero-image">
             <div class="hero-text">
                 <h1>Ocean Paradise</h1>
-                <h>Dive & Travel</h3>
+                <h3>Dive & Travel</h3>
             </div>
         </div>
     </header>
@@ -98,13 +102,25 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="slider-arrows">
-                    <button type="button" class="slick-prev">&#9665;</button>
-                    <button type="button" class="slick-next">&#9655;</button>
+  <button type="button" class="slick-prev">&#9665;</button>
+  <button type="button" class="slick-next">&#9655;</button>
+</div>
+<div class="pricing-button">
+  <button type="button">Pricing & Materials</button>
+</div>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
 
     <div class="hero-image-3">
         <div class="hero-text-3">
@@ -134,32 +150,30 @@
         </div>
     </div>
 
-
-
-
     <div class="image-gallery">
-        <h2>Where can we Take You?</h2>
+        <h2>Where Can We Take You?</h2>
     </div>
+
     <div class="section-five">
-    <div class="row">
-        <div class="column">
-            <img src="images/homepage/turtle.jpg" alt="Turtle" style="width:100%">
-            <img src="images/homepage/dive-trip-personal.jpg" alt="O&P Scuba Trip" style="width:100%">
-            <img src="images/homepage/beach-coconut.jpg" alt="Beach Vibes" style="width:100%">
-        </div>
+        <div class="row">
+            <div class="column">
+                <img src="images/homepage/turtle.jpg" alt="Turtle" style="width:100%">
+                <img src="images/homepage/dive-trip-personal.jpg" alt="O&P Scuba Trip" style="width:100%">
+                <img src="images/homepage/beach-coconut.jpg" alt="Beach Vibes" style="width:100%">
+            </div>
 
-        <div class="column">
-            <img src="images/homepage/beach-trees.jpg" alt="Beach Vibes" style="width:100%">
-            <img src="images/homepage/diver-1.jpg" alt="Diver" style="width:100%">
-            <img src="images/homepage/clown-fish.jpg" alt="Clown Fish" style="width:100%">
-        </div>
+            <div class="column">
+                <img src="images/homepage/beach-trees.jpg" alt="Beach Vibes" style="width:100%">
+                <img src="images/homepage/diver-1.jpg" alt="Diver" style="width:100%">
+                <img src="images/homepage/clown-fish.jpg" alt="Clown Fish" style="width:100%">
+            </div>
 
-        <div class="column">
-            <img src="images/homepage/diver-stingray.jpg" alt="Diver and diver-sting-ray" style="width:100%">
-            <img src="images/homepage/underwater-beach.jpg" alt="Underwater Beach" style="width:100%">
-            <img src="images/homepage/below-perspective-of-diver.jpg" alt="Below Perspective of Diver" style="width:100%">
+            <div class="column">
+                <img src="images/homepage/diver-stingray.jpg" alt="Diver and diver-sting-ray" style="width:100%">
+                <img src="images/homepage/underwater-beach.jpg" alt="Underwater Beach" style="width:100%">
+                <img src="images/homepage/below-perspective-of-diver.jpg" alt="Below Perspective of Diver" style="width:100%">
+            </div>
         </div>
-    </div>
     </div>
 
     <div class="section-hero">
@@ -167,9 +181,82 @@
             <source type="video/mp4" src="videos/pexels-video-jellyfish.mp4" />
         </video>
         <div class="content">
-            <!-- Additional content for the section with the video background -->
+            <div class="columns-container">
+                <div class="column-left">
+                    <h1>Ready to find your Adventure?</h1>
+                    <h2>Use our contact form for all information requests or questions.</h2>
+                    <h4>All information is treated with complete respect and confidentiality.</h4>
+                </div>
+                <div class="column-right">
+                    <div class="container">
+                                <form action="/action_page.php">
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="fname"></label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" id="fname" name="firstname" placeholder="First and Last..">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="lname"></label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <input type="text" id="lname" name="lastname" placeholder="Your Email">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-25">
+                                                    <label for="comments"></label>
+                                                </div>
+                                                <div class="col-75">
+                                                    <textarea id="subject" name="subject" placeholder="Questions and Comments" style="height:200px"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <button type="submit" class="button">Submit</button>
+                                            </div>
+                                            
+                                </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
+<div class="page-bottom">
+
+   <div class="page-bottom-left-column">
+          <p>
+            Address <br>
+            9895 SE Sunnyside Rd Suite H <br>
+            Clackamas, OR 97015. <br>
+            Phone Number <br>
+            555-555-5555
+          </p>
+    </div>      
+    
+        <div class="page-bottom-right-column">
+          <button class="button">Facebook</button>
+          <button class="button">Instagram</button>
+          <button class="button">YouTube</button>
+        </div>
+
+</div>
+    
+<div class="hero-image-5">
+    <div class="hero-text-5">
+        <h1>Connect</h1>
+    </div>
+</div>
+
+
 
 
     <!-- Include jQuery and Slick Slider JS -->
@@ -190,5 +277,8 @@
         });
     </script>
 </body>
+
+
+
 
 </html>
