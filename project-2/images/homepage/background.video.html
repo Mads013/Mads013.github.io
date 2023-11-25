@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="homepage-head">
+      <h1>Ocean Paradise</h1>
+    </header>
+    <section class="two">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dolores fuga sint recusandae nobis harum autem dolorem aperiam quos obcaecati!</p>
+    </section>
+    
+    <div class="background-video">
+      <div class="video-container">
+        <video playsinline autoplay muted loop poster="images/rrcg-poster.png">
+          <source type="video/mp4" src="videos/rock_camp_song.mp4" />
+        </video>
+      </div>
+      <div>
+        <h1>Blueberry Cheesecake</h1>
+        <button>Recipe here</button>
+      </div>
+      <div>I'm the right column!</div>
+      
+    </div>
+    <script>
+      window.document.onload = function (e) {
+        let newElement = document.getElementsByClassName('video-container')
+
+        // newElement.innerHTML += `<ul><li>Item 1</li><li>Item 2</li></ul>`
+        // newElement.className = 'item-list'
+        // document.getElementById('root').append(newElement)
+
+        newElement.innerHTML += `<a href="#" class="playBtn">play sound</a>`
+      }
+      // $(‘video:nth-child(1)’).append(‘<div class=“play”>Play Audio</div>')
+    </script>
+  </body>
+</html>
+
+
+

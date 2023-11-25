@@ -1,10 +1,14 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; 
+  margin: 0;
 }
+
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  color:#ffffff;
+  background: linear-gradient(to bottom, #a8c8ff, #97B2DF, #092147);
 }
 
 .nav {
@@ -59,6 +63,7 @@ body {
 }
 
 .hero-text {
+  
   font-family: Oswald;
   text-align: center;
   position: absolute;
@@ -66,6 +71,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 45px;
 }
 
 .section-one {
@@ -100,6 +106,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 45px;
 }
 
 
@@ -118,14 +125,22 @@ justify-content: center;
 
 }
 
-
-
-
-
 .slider-container {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+}
+
+.slider-text {
+  color: white;
+  font-family: 'Lora', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.slider-container a {
+  text-decoration: none;
 }
 
 .slick-slider {
@@ -164,9 +179,109 @@ text-align: center;
 
 /* You can adjust these values as needed */
 
+.hero-image-3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/homepage/hero-image-3-hp.jpg);
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
 
 
 
+
+.hero-text-3{
+  font-family: Oswald;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+}
+
+
+.section-three {
+  padding: 20px;
+  text-align: center;
+  padding: 5%;
+}
+
+.travel-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px; /* Adjust as needed */
+}
+
+.travel-box {
+  text-align: center;
+}
+
+.travel-box img {
+  width: 200px; /* Adjust image size */
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  background-size: cover;
+;
+}
+
+.travel-box h3 {
+  font-family: Arial, sans-serif; /* You can adjust the font */
+  color: #ffffff; /* Adjust the color */
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.image-gallery h2{
+font-family: lora;
+font-weight: 300;
+text-align: center;
+padding: 50px;
+
+}
+
+.section-two {
+  padding: 20px;
+  text-align: center;
+  padding: 5%;
+}
+
+
+.hero-image-4{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(images/homepage/multiple-divers.jpg);
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center; /* Center the background image */
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-text-4{
+  font-family: Oswald;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+}
+
+
+.section-five{
+  margin-left: 30%;
+  margin-right: 30%;
+
+}
 
 .image-gallery {
   margin-left: 10%;
@@ -206,5 +321,29 @@ text-align: center;
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }}
+
+  .section-hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    width: 100%
   }
-}
+  
+  #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    box-sizing: border-box;
+  }
