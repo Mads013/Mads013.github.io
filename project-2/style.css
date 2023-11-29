@@ -276,7 +276,7 @@ text-align: right;
 
 .slick-prev,
 .slick-next {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
   color: white;
   background: transparent;
@@ -649,3 +649,27 @@ textarea {
   background-size: cover;
 }
 
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s; /* Animation */
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden; /* Ensure images don't overflow */
+}
+
+.zoom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom) */
+}
