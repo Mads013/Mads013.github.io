@@ -1,3 +1,13 @@
+<!--
+interactive websties:
+https://psuinteractivemedia.com/code_snippets/css-card-effect/
+
+
+
+
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +45,7 @@
                     <li><a href="pricing.html">Pricing & Materials</a></li>
                     <li><a href="discover.scuba.html">Discover Scuba</a></li>
                     <li><a href="open.water.html">Open Water</a></li>
-                    <li><a href="#">Advanced Diving</a></li>
+                    <li><a href="advanced.html">Advanced Diving</a></li>
                     <li><a href="#">Help & Rescue</a></li>
                     <li><a href="#">Divemaster</a></li>
                 </ul>
@@ -45,14 +55,14 @@
     </nav>
 
 
-    <header>
-        <div class="hero-image">
-            <div class="hero-text">
-                <h1>Ocean Paradise</h1>
-                <h3>Dive & Travel</h3>
-            </div>
+    <header class="full-landing-image">
+        <div class="hero-text">
+            <h1>Ocean Paradise</h1>
+            <h3>Dive & Travel</h3>
         </div>
     </header>
+
+
 
     <div class="section-one">
         <div class="intro-title">
@@ -86,7 +96,7 @@
                         </a>
                     </div>
                     <div>
-                        <a href="link">
+                        <a href="advanced.html">
                             <img src="images/homepage/scubadiver-advanced.jpg" alt="Advanced">
                             <p class="slider-text">Advanced</p>
                         </a>
@@ -264,9 +274,10 @@
 
 
     <!-- Include jQuery and Slick Slider JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/sirxemic/jquery.ripples/jquery.ripples-min.js"></script>
+        <script src="main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             let videoContainer = document.querySelector('.video-container');

@@ -9,3 +9,10 @@ $(document).ready(function(){
         nextArrow: $('.slick-next'),
     });
 });
+
+$(document).ready(function() {
+    $(".full-landing-image").ripples({
+        resolution: 256,
+        perturbance: 0.01,
+    });
+});
