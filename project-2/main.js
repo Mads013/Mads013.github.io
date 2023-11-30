@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     // Initialize Slick Slider
     $('.slick-slider').slick({
         dots: false,
@@ -8,11 +8,19 @@ $(document).ready(function(){
         prevArrow: $('.slick-prev'),
         nextArrow: $('.slick-next'),
     });
-});
 
-$(document).ready(function() {
+    // Initialize Ripples
     $(".full-landing-image").ripples({
-        resolution: 256,
-        perturbance: 0.01,
+        resolution: 100,
+        perturbance: 0.003,
+    });
+
+    // Hover effect for figures
+    $("figure").on("mouseleave", function () {
+        $(this).removeClass("hover");
+    });
+
+    $("figure").on("mouseenter", function () {
+        $(this).addClass("hover");
     });
 });
