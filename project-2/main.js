@@ -15,7 +15,9 @@ $(document).ready(function () {
         perturbance: 0.003,
     });
 
-    // Hover effect for figures
+    // NOTE: The following code is for hover effects, but it is currently commented out.
+    // Uncomment and modify as needed if you want to use it.
+    /*
     $("figure").on("mouseleave", function () {
         $(this).removeClass("hover");
     });
@@ -23,4 +25,5 @@ $(document).ready(function () {
     $("figure").on("mouseenter", function () {
         $(this).addClass("hover");
     });
+    */
 });
