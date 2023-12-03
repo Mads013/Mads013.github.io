@@ -202,7 +202,21 @@ input[type="checkbox"] {
     position: relative;
     padding: 0;
     margin: 0;
+    background-repeat: none;
+ 
+
+
+
 }
+
+
+
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+  }
+
 .hero-image-2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/hero-image-2-hp.jpg);
     height: 450px;
@@ -379,8 +393,9 @@ input[type="checkbox"] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.635);
+    color: rgba(255, 255, 255, 0.806);
     font-size: 60px;
+  letter-spacing: 5px;
 }
 /* Section One Styles */
 .section-one, .section-two, .section-three, .section-four, .section-five {
@@ -711,20 +726,25 @@ input[type="text"], textarea {
     background-color: #ffa500;
 }
 
+
 .image-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    object-fit: cover;
+    padding-bottom: 90px;
 }
 .zoom {
-    padding: 15px;
-    transition: transform 0.2s;
+    box-sizing: border-box;
     width: 20%;
-    height: 800px;
-    margin: 0 auto;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 15px;
     overflow: hidden;
+    transition: transform 0.2s;
+    height:600px;
 }
+
+
+
+
 .zoom img {
     width: 100%;
     height: 100%;
@@ -741,6 +761,11 @@ input[type="text"], textarea {
    /* (150% zoom) */
     ;
 }
+
+@media only screen and (max-width: 1200px) {
+    .image-container {
+        flex-wrap: wrap;
+    }}
 /*help on this one- ends up putting one image below when transitioning screen ize*/
 @media screen and (max-width: 800px) {
     .zoom {
