@@ -173,6 +173,220 @@ body {
     padding: 0;
     margin: 0;
 }
+
+
+
+.hero-image-2 {
+ background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/hero-image-2-hp.jpg);
+  height: 450px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-image-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/turtle-diver.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+   .hero-image-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/multiple-divers.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+   .hero-image-7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/discover-scuba/pool-diving.jpg);
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    background-position: center -250px; /* Adjust this value to move the background down */
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+
+   .hero-image-8 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/pool-dive.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+   .hero-image-9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/open-water/above-shot.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center -300px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+   .hero-image-10 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/open-water/highlight.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center -180px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+
+   .hero-image-11 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/advanced/scubadiver-advanced.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center 10px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+   .hero-image-12 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/advanced/jumping-into-water.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+   .hero-image-13 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/scubadiving-rescue.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+   .hero-image-14 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/flag.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+
+
+   .hero-image-15 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/diver-2.0.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position:  0 -250px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+   .hero-image-16 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/mask-bubbles.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: 0 -25px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+   .hero-image-17 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/yellow-diver.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: 0 -25px;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+
+   .hero-image-18 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/scubadiving-master.jpg);
+     height: 450px;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     padding: 0;
+     margin: 0;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-text {
     font-family: 'Oswald';
     text-align: center;
@@ -603,6 +817,3 @@ input[type="text"], textarea {
             height: auto; /* Allow the height to adjust based on content */
         }
     }
-
-
-    
