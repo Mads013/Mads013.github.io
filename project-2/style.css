@@ -6,31 +6,37 @@
     padding: 0;
 }
 
-h1{
-font: 70px;
-font-family: 'Oswald';
+h1 {
+    font: 70px;
+    font-family: 'Oswald';
 }
- h2{
-font-size: 60px;
-font-family: 'Oswald';
- }
- h3{
+h2 {
+    font-size: 60px;
+    font-family: 'Oswald';
+}
+h3 {
     font-size: 40px;
     font-family: 'Oswald';
-     }
+}
 
-h4{
-font-size: 30px;
-font-family: 'Oswald';
+h4 {
+    font-size: 30px;
+    font-family: 'Oswald';
+
+}
+h5 {
+    font-size: 20px;
+    font-family: 'Oswald';
+    letter-spacing: 2px;
 
 }
 
-body{
+body {
     font-size: 25px;
-font-family: 'lora';
+    font-family: 'lora';
     margin: 0;
     color: #ffffff;
-    background: linear-gradient(to bottom, #97b2df, #092147);
+    background: linear-gradient(to bottom, #475c80, #041024);
 
 }
 
@@ -47,23 +53,23 @@ font-family: 'lora';
     height: 100%;
     width: 100%;
     background: linear-gradient(-135deg, #092147, #315da2);
-   /* background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98);
     */
-   /* clip-path: circle(25px at calc(0% + 45px) 45px);
+    /* clip-path: circle(25px at calc(0% + 45px) 45px);
     */
     clip-path: circle(25px at calc(100% - 45px) 45px);
     transition: all 0.3s ease-in-out;
     display: flex;
     align-items: center;
 }
-#active:checked ~ .wrapper {
+#active:checked~.wrapper {
     clip-path: circle(75%);
 }
 .menu-btn {
     position: absolute;
     z-index: 2;
     right: 15px;
-   /* left: 20px?;
+    /* left: 20px?;
     */
     top: 20px;
     height: 50px;
@@ -72,19 +78,19 @@ font-family: 'lora';
     line-height: 50px;
     border-radius: 50%;
     font-size: 20px;
-   /*lines on menu bar*/
+    /*lines on menu bar*/
     color: #fff;
     cursor: pointer;
     background: linear-gradient(-135deg, #ffffff, #092147);
-   /* background: linear-gradient(375deg, #1cc7d0, #2ede98);
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98);
     */
     transition: all 0.3s ease-in-out;
 }
-#active:checked ~ .menu-btn {
+#active:checked~.menu-btn {
     background: #fff;
     color: #ffa500;
 }
-#active:checked ~ .menu-btn i:before {
+#active:checked~.menu-btn i:before {
     content: "\f00d";
 }
 .wrapper ul {
@@ -96,11 +102,12 @@ font-family: 'lora';
     list-style: none;
     text-align: center;
     width: 100%;
-   /* Make sure the width is 100% for proper centering */
+    /* Make sure the width is 100% for proper centering */
     ;
 }
 .wrapper ul li {
     margin: 15px 0;
+    text-decoration: none;
 }
 .wrapper ul li a {
     color: none;
@@ -113,14 +120,14 @@ font-family: 'lora';
     line-height: 50px;
     transition: all 0.3s ease;
     display: grid;
-   /* Make the anchor a block-level element for proper centering */
+    /* Make the anchor a block-level element for proper centering */
     width: 100%;
-   /* Ensure the anchor takes the full width */
+    /* Ensure the anchor takes the full width */
     ;
 }
 .wrapper ul li a:after {
     position: absolute;
-    content: "";
+text-decoration: none;
     width: 100%;
     height: 50px;
     left: 0;
@@ -164,6 +171,7 @@ input[type="checkbox"] {
 }
 .menu-bar li {
     text-align: center;
+    text-decoration: none;
 }
 .menu-bar ul {
     list-style: none;
@@ -191,7 +199,7 @@ input[type="checkbox"] {
 }
 .clock-location img {
     max-height: 30px;
-   /* Set a max height for the clock image */
+    /* Set a max height for the clock image */
     ;
 }
 /* Hero Image Styles */
@@ -203,7 +211,7 @@ input[type="checkbox"] {
     padding: 0;
     margin: 0;
     background-repeat: none;
- 
+
 
 
 
@@ -215,10 +223,10 @@ input[type="checkbox"] {
 .hero-img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 .hero-image-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/hero-image-2-hp.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/homepage/hero-image-2-hp.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -228,7 +236,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/turtle-diver.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/homepage/turtle-diver.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -243,7 +251,7 @@ input[type="checkbox"] {
 
 
 .hero-image-4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/multiple-divers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/homepage/multiple-divers.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -271,13 +279,13 @@ input[type="checkbox"] {
     width: 100%;
     background-size: cover;
     background-position: center -250px;
-   /* Adjust this value to move the background down */
+    /* Adjust this value to move the background down */
     position: relative;
     padding: 0;
     margin: 0;
 }
 .hero-image-8 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/homepage/pool-dive.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/homepage/pool-dive.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -287,7 +295,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-9 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/open-water/above-shot.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/open-water/above-shot.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -297,7 +305,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-10 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/open-water/highlight.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/open-water/highlight.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -307,7 +315,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-11 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/advanced/scubadiver-advanced.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/advanced/scubadiver-advanced.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -317,7 +325,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-12 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/advanced/jumping-into-water.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/advanced/jumping-into-water.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -327,7 +335,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-13 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/scubadiving-rescue.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/rescue/scubadiving-rescue.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -337,7 +345,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-14 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/flag.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/rescue/flag.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -347,7 +355,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-15 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/rescue/diver-2.0.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/rescue/diver-2.0.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -357,7 +365,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-16 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/mask-bubbles.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/divemaster/mask-bubbles.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -367,7 +375,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-17 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/yellow-diver.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/divemaster/yellow-diver.jpg);
     height: 450px;
     width: 100%;
     background-size: cover;
@@ -377,7 +385,7 @@ input[type="checkbox"] {
     margin: 0;
 }
 .hero-image-18 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url(images/divemaster/scubadiving-master.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(images/divemaster/scubadiving-master.jpg);
     height: 200px;
     width: 100%;
     background-size: cover;
@@ -395,21 +403,40 @@ input[type="checkbox"] {
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.806);
     font-size: 60px;
-  letter-spacing: 5px;
+    letter-spacing: 5px;
 }
+
+
+
+
+
 /* Section One Styles */
 .section-one, .section-two, .section-three, .section-four, .section-five {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
-    list-style:none;
-    padding: 10%;
+    list-style: none;
     margin: 0px 200px 0px 200px;
     text-decoration: none;
+    line-height: 45px;
+    text-decoration: none;
+
 }
-.intro-title {
-    font-family: 'Lora';;
+
+
+.section-one .section-two h1 {
+    padding: 100px;
 }
-.section-two ul {
+.section-one .paragraph-text h2 {
+    padding: 60px;}
+
+
+.intro-title h2 {
+    padding: 50px;
+    line-height: 70px;
+
+    font-family: 'Lora';
+}
+.section-one, .section-two ul{
     list-style: none;
 }
 /* Class Image Slideshow Styles */
@@ -430,7 +457,8 @@ input[type="checkbox"] {
 }
 .slider-text {
     color: white;
-    font-family: 'Lora';;
+    font-family: 'Lora';
+    ;
     font-size: 30px;
     text-align: center;
     margin: 20px 0;
@@ -449,7 +477,7 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-   /* Add some space between the arrows and the slideshow */
+    /* Add some space between the arrows and the slideshow */
     ;
 }
 .slick-prev, .slick-next {
@@ -463,7 +491,7 @@ input[type="checkbox"] {
     height: 60px;
     border-radius: 50%;
     margin: 0 10px;
-   /* Adjust the margin between the arrows */
+    /* Adjust the margin between the arrows */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -477,11 +505,28 @@ input[type="checkbox"] {
 /* Additional styles to ensure proper positioning */
 .slick-prev:before, .slick-next:before {
     display: none;
-   /* Hide the default arrow content */
+    /* Hide the default arrow content */
     ;
 }
-.paragraph-text{
+.paragraph-text ul {
     list-style: none;
+    line-height: 50px;
+}
+
+.paragraph-text{
+    padding-top: 20px;
+}
+
+.section-one .paragraph-text .dive-item {
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    line-height: .5px; /* Adjust this value for desired line height */
+    color: rgba(255, 255, 255, 0.382);
+}
+
+.section-one .paragraph-text .min-age h3 {
+    text-decoration: underline; /* Underline the h3 text */
 }
 /* Section Three Styles */
 .section-three {
@@ -500,11 +545,12 @@ input[type="checkbox"] {
     text-align: center;
 }
 .travel-box img {
-    width: 200px;
-    height: 150px;
+    width: 100%;
+    height: 300px;
     display: block;
     margin: 0 auto;
-    background-size: cover;
+    object-fit: cover;
+    padding: 20px;
 }
 .travel-box h3 {
     font-family: 'Oswald';
@@ -523,13 +569,14 @@ input[type="checkbox"] {
     padding: 20px;
     text-align: center;
     padding: 5%;
+    line-height: 50px;
 }
 
 
 
-.course-info-open-water{
-text-align: left;
-word-spacing: 30%;
+.course-info-open-water {
+    text-align: left;
+    word-spacing: 30%;
 
 
 }
@@ -576,7 +623,7 @@ word-spacing: 30%;
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
-   }
+    }
 }
 /* Video Section Styles */
 .section-hero {
@@ -616,13 +663,13 @@ word-spacing: 30%;
 }
 .column-left {
     padding-right: 50px;
-   /* Add some spacing on the right */
+    /* Add some spacing on the right */
 }
 /* Adjust the font family and placeholder text */
 .column-left h1, .column-left h2, .column-left h4 {
     font-family: 'Oswald';
     margin-bottom: 20px;
-   /* Add more spacing between elements */
+    /* Add more spacing between elements */
     text-align: right;
 }
 .column-left h2 {
@@ -633,19 +680,19 @@ word-spacing: 30%;
 }
 
 #lname::placeholder {
-   /* Change the placeholder text for the Last Name input */
+    /* Change the placeholder text for the Last Name input */
     content: "Email";
 }
 @media screen and (max-width: 800px) {
     .columns-container {
         flex-direction: column;
-   }
+    }
     .column-left, .column-right {
         flex-basis: 100%;
         margin-bottom: 20px;
         text-align: center;
         padding: 0;
-   }
+    }
 }
 .column-right text {
     font-family: 'Oswald';
@@ -654,7 +701,7 @@ input[type="text"], textarea {
     font-family: 'Oswald';
     letter-spacing: 1px;
     width: 200%;
-   /* Adjusted width to 100% */
+    /* Adjusted width to 100% */
     padding: 12px;
     margin: 8px 0;
     border: 1px solid #ffffff;
@@ -664,9 +711,9 @@ input[type="text"], textarea {
 /* Style the submit button */
 .button {
     width: 200px;
-   /* Set a fixed width for all buttons */
+    /* Set a fixed width for all buttons */
     padding: 15px 0;
-   /* Adjust padding for better appearance */
+    /* Adjust padding for better appearance */
     border: 2px solid white;
     border-radius: 4px;
     cursor: pointer;
@@ -675,7 +722,7 @@ input[type="text"], textarea {
     color: white;
     margin-bottom: 10px;
     text-align: center;
-   /* Center the text within the button */
+    /* Center the text within the button */
     ;
 }
 .button:hover {
@@ -686,26 +733,45 @@ input[type="text"], textarea {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-   /* Add some top margin to separate from the hero content */
+    /* Add some top margin to separate from the hero content */
     ;
 }
 .page-bottom {
     display: flex;
+    padding: 5% 0 5% 0;
 }
 .page-bottom-left-column, .page-bottom-right-column {
     background-color: transparent;
     color: white;
     flex: 1;
-   /* Equal width for both columns */
+
+    /* Equal width for both columns */
     margin: 10px;
-   /* Add some margin between columns */
+    /* Add some margin between columns */
     ;
 }
+.page-bottom-left-column {
+    padding-right: 50px;
+
+
+
+}
+
+
+
+.left-column-text {
+    text-align: right;
+    line-height: 40px;
+}
+
+
 .page-bottom-left-column p {
     font-family: 'Lora';
     font-size: 20px;
     text-align: right;
-    color: rgba(255, 255, 255, 0.171);
+    color: rgba(255, 255, 255, 0.591);
+    line-height: 35px;
+    text-align: right;
 }
 .page-bottom-right-column {
     display: flex;
@@ -735,11 +801,12 @@ input[type="text"], textarea {
 .zoom {
     box-sizing: border-box;
     width: 20%;
-    max-width: 300px; /* Adjust the maximum width as needed */
+    max-width: 300px;
+    /* Adjust the maximum width as needed */
     margin: 15px;
     overflow: hidden;
     transition: transform 0.2s;
-    height:600px;
+    height: 600px;
 }
 
 
@@ -754,54 +821,55 @@ input[type="text"], textarea {
     .zoom {
         width: calc(33.333% - 20px);
         height: auto;
-   }
+    }
 }
 .zoom:hover {
     transform: scale(1.5);
-   /* (150% zoom) */
+    /* (150% zoom) */
     ;
 }
 
 @media only screen and (max-width: 1200px) {
     .image-container {
         flex-wrap: wrap;
-    }}
+    }
+}
 /*help on this one- ends up putting one image below when transitioning screen ize*/
 @media screen and (max-width: 800px) {
     .zoom {
         width: calc(50% - 20px);
         max-width: none;
-       /* Remove max-width for smaller screens */
+        /* Remove max-width for smaller screens */
         height: auto;
-   }
+    }
 }
 @media only screen and (max-width: 620px) {
-   /* For mobile phones: */
+    /* For mobile phones: */
     .hero-text, .homepage, .nav, .section-one, .section-five {
         width: 100%;
-   }
+    }
 }
 @media only screen and (max-width: 620px) {
     .wrapper ul li a {
         font-size: 18px;
-       /* Adjust the font size for smaller screens */
-   }
+        /* Adjust the font size for smaller screens */
+    }
 }
 @media only screen and (max-width: 620px) {
     .wrapper ul li a {
         max-width: 150px;
-       /* Set a maximum width for the navigation items */
-   }
+        /* Set a maximum width for the navigation items */
+    }
 }
 @media only screen and (max-width: 620px) {
     .wrapper ul li {
         margin: 10px 0;
-       /* Adjust the margin for smaller screens */
-   }
+        /* Adjust the margin for smaller screens */
+    }
 }
 @media only screen and (max-width: 620px) {
     .wrapper {
         height: auto;
-       /* Allow the height to adjust based on content */
-   }
+        /* Allow the height to adjust based on content */
+    }
 }
