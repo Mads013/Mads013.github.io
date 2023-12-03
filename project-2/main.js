@@ -9,11 +9,43 @@ $(document).ready(function () {
         nextArrow: $('.slick-next'),
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Initialize Ripples
     $(".full-landing-image").ripples({
-        resolution: 100,
-        perturbance: 0.03,
+        resolution: 300,
+        perturbance: 0.01,
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // NOTE: The following code is for hover effects, but it is currently commented out.
     // Uncomment and modify as needed if you want to use it.
