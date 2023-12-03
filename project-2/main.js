@@ -12,7 +12,7 @@ $(document).ready(function () {
     // Initialize Ripples
     $(".full-landing-image").ripples({
         resolution: 100,
-        perturbance: 0.003,
+        perturbance: 0.03,
     });
 
     // NOTE: The following code is for hover effects, but it is currently commented out.
