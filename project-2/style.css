@@ -434,7 +434,6 @@ input[type="checkbox"] {
     padding: 50px;
     line-height: 70px;
 
-    font-family: 'Lora';
 }
 .section-one, .section-two ul{
     list-style: none;
@@ -516,7 +515,11 @@ input[type="checkbox"] {
 .paragraph-text{
     padding-top: 20px;
 }
+.orange-text{
 
+color:#ffdb9a;
+
+}
 .section-one .paragraph-text .dive-item {
     font-size: 20px;
     padding-bottom: 20px;
@@ -572,7 +575,11 @@ input[type="checkbox"] {
     line-height: 50px;
 }
 
+.course-details {
+padding: 20px;
 
+
+}
 
 .course-info-open-water {
     text-align: left;
@@ -810,7 +817,9 @@ input[type="text"], textarea {
 }
 
 
-
+.homepage-section-two, h2{
+padding-bottom: 30px;
+}
 
 .zoom img {
     width: 100%;
