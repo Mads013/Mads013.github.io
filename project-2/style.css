@@ -7,7 +7,7 @@
 }
 
 h1{
-font: 60px;
+font: 70px;
 font-family: 'Oswald';
 }
  h2{
@@ -509,6 +509,16 @@ input[type="checkbox"] {
     text-align: center;
     padding: 5%;
 }
+
+
+
+.course-info-open-water{
+text-align: left;
+word-spacing: 30%;
+
+
+}
+
 /* Hero Image 4 Styles */
 /* Section Five Styles */
 .section-five {
@@ -590,20 +600,23 @@ input[type="checkbox"] {
     color: white;
 }
 .column-left {
-    padding-right: 20px;
+    padding-right: 50px;
    /* Add some spacing on the right */
-    ;
 }
 /* Adjust the font family and placeholder text */
 .column-left h1, .column-left h2, .column-left h4 {
     font-family: 'Oswald';
     margin-bottom: 20px;
    /* Add more spacing between elements */
-    text-align: center;
+    text-align: right;
 }
-.column-left h1 {
-    font-size: 30px;
+.column-left h2 {
+    font-size: 25px;
+    font-family: 'Lora';
+    font-weight: 100;
+    letter-spacing: 10%;
 }
+
 #lname::placeholder {
    /* Change the placeholder text for the Last Name input */
     content: "Email";
