@@ -1,6 +1,6 @@
 /* Code for nav bar: https://www.codingnepalweb.com/fullscreen-overlay-navigation-menu-bar-html-css*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Lora&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lora&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 h1 {
-    font: 70px;
+    font-size: 100px;
     font-family: 'Oswald' ,sans-serif;;
 }
 h2 {
@@ -166,6 +166,7 @@ input[type="checkbox"] {
     top: 0;
     z-index: 1000;
 }
+
 .menu-bar {
     text-align: center;
     flex: auto;
@@ -193,13 +194,15 @@ input[type="checkbox"] {
 }
 .logo {
     flex: 1;
-    align-items: center;
 }
 .logo img {
     max-height: 50px;
 }
 .clock-location {
     flex: 1;
+    display:flex;
+    align-items: center;
+    
 }
 .clock-location img {
     max-height: 30px;
@@ -937,7 +940,7 @@ padding-bottom: 30px;
     }
 
     .wrapper ul li a {
-        font-size: 18px;
+        font-size: 15px;
         max-width: none;
     }
 
@@ -956,26 +959,29 @@ padding-bottom: 30px;
 
 @media screen and (max-width: 620px) {
     h1 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 100%;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 100%;
     }
 
     h4 {
-        font-size: 18px;
+        font-size: 100%;
     }
 
     h5 {
-        font-size: 16px;
+        font-size: 100%;
         letter-spacing: 1px;
     }
-
+    body {
+        font-size: 100%;
+        letter-spacing: 1px;
+    }
     .nav {
         padding: 5px;
     }
@@ -1140,14 +1146,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald', sans-serif;
 }
 
-.nav {
-    background-color: #041024);
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .menu-bar ul {
     list-style: none;
@@ -1202,3 +1200,16 @@ h1, h2, h3, h4, h5, h6 {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: row; /* Display items in a row on smaller screens */
+        justify-content: center; /* Center items horizontally on smaller screens */
+    }}
+    @media (min-width: 769px) {
+        .nav {
+            justify-content: space-between;
+        }
+    }
+
+    
