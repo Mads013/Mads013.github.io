@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(243, 56, 87);
+}
+
+h2 {
+    color: rgb(255, 138, 158);
+}
+
+.school-essentials {
+    margin: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.box {
+    flex: 1;
+    margin: 0 10px; /* Adjust as needed for spacing between boxes */
+}
+
+/* Styling links to have a consistent color */
+a {
+    color: #0d5c4c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #1ba085;
+}
+
+li {
+    text-decoration: none;
+}
