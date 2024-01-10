@@ -56,8 +56,9 @@ a:hover {
     background-size: contain;
     padding: 0;
     cursor: pointer;
-    width: 30px; /* Adjust the width to your desired size */
-    height: 30px; /* Adjust the height to your desired size */
+    width: 100%; /* Adjust the width to your desired size */
+    height: 150px; /* Adjust the height to your desired size */
+    flex-direction: row;
 }
 
 /* Dropdown content styling */
@@ -75,11 +76,38 @@ a:hover {
     display: block;
 }
 
-/* Additional styles for consistency */
+/* Additional styles for consistency within dropdown-content */
 .dropdown-content ul {
     padding: 10px; /* Add padding to the dropdown list for better readability */
 }
 
 .dropdown-content li {
     padding: 5px 0; /* Add vertical padding to list items in the dropdown */
+}
+
+/* Styles for images container */
+.images-container {
+    display: flex;
+    align-items: center;
+}
+
+.images-container img {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.logo {
+    background-size: contain;
+    width: 20%; /* Adjust the width to your desired size */
+    height: 20%;
+ flex-direction: row; /* Ensure it's a block-level element for centering */
 }
