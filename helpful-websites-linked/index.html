@@ -1,38 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My College Resources</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My College Resources</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
-
-    <div class="container" id="resourceContainer">
-        <!-- Header -->
-        <nav>
-            <div>
-            <div class="school-essentials">                </div>
-                <img class="logo" src="personal-website-images/madi-martinez.png" alt="Madi Martinez Logo">
-            </div>
-                <div class="dropdown">
-                    <button class="dropdown-button"></button>                    <div class="dropdown-content">
-                        <ul>
-                            <li><a href="https://launchpad.37signals.com/bc3/3822453/signin" target="_blank">Base Camp</a></li>
-                            <li><a href="https://canvas.pdx.edu/" target="_blank">Canvas</a></li>
-                            <li><a href="brandlab.htm" target="_blank">Des-321 Brand Lab</a></li>
-                            <li><a href="https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1704404115%26return_to%3D%252Fclient%252FT019E043SMT%252FC0192A76015%26teams%3DT019E043SMT" target="_blank">Slack</a></li>
-                            <li><a href="https://www.pinterest.com/" target="_blank">Pinterest</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-        </nav>
-
+  <div class="container" id="resourceContainer">
+    <!-- Image Button to Open Overlay -->
+    <button class="menu-button" onclick="toggleNav()" style="width: 30px;"><img src="personal-website-images/pink-leaf.png" alt="Menu"></button>
+  </div><!-- Overlay Navigation -->
+  <div class="overlay" id="overlay">
+    <a href="#" class="closebtn" onclick="toggleNav()">×</a>
+    <div class="overlay-content">
+      <a href="#">Home</a> <a href="#">About</a> <a href="https://launchpad.37signals.com/bc3/3822453/signin" target="_blank">Base Camp</a> <a href="https://google.com">Google</a> <a href="brandlab.htm" target="_blank">Des-321 Brand Lab</a> <a href="#">Websites</a> <a href="#">Basecamp</a> <a href="#">Canvas</a> <a href="https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1704404115%26return_to%3D%252Fclient%252FT019E043SMT%252FC0192A76015%26teams%3DT019E043SMT" target="_blank">Slack</a> <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+    </div>
+  </div> <!-- Content Section -->
         <!-- Content Section -->
         <div class="row">
             <!-- Category: Typography -->
@@ -154,6 +140,7 @@
 
     </div>
 
+    </div>
+  <script src="main.js"></script>
 </body>
-
 </html>

@@ -46,87 +46,99 @@ a {
 
 a:hover {
     text-decoration: underline; /* Underline on hover */
-    color: #1ba085;
+    color: #1ba085;}
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.overlay.open {
+    width: 100%;
 }
 
-/* Dropdown button styling */
-.dropdown-button {
-    border: none;
-    background: url('personal-website-images/pink-leaf.png') no-repeat left center;
-    background-size: contain;
-    padding: 0;
-    cursor: pointer;
-    width: 100%; /* Adjust the width to your desired size */
-    height: 150px; /* Adjust the height to your desired size */
-    flex-direction: row;
-}
-
-/* Dropdown content styling */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Display the dropdown-content when dropdown-button is hovered */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Additional styles for consistency within dropdown-content */
-.dropdown-content ul {
-    padding: 10px; /* Add padding to the dropdown list for better readability */
-}
-
-.dropdown-content li {
-    padding: 5px 0; /* Add vertical padding to list items in the dropdown */
-}
-
-/* Styles for images container */
-.images-container {
-    display: flex;
-    align-items: center;
-}
-
-.images-container img {
-    margin-right: 10px; /* Adjust the margin as needed */
-}
-
-/* Navbar styles */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-}
-
-.navbar ul li {
-    margin-right: 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Dropdown styles */
-.dropdown {
+.overlay-content {
     position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: none; /* Initially hide the overlay content */
 }
 
-.logo {
-    background-size: contain;
-    width: 20%; /* Adjust the width to your desired size */
-    height: 20%;
-    flex-direction: row; /* Ensure it's a block-level element for centering */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;}
+
+    .overlay-content {
+        text-align: center;
+    }
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #818181;
+}
+.menu-button {
+    cursor: pointer;
+    width:50px;
+}
+
+.image-container {
+    max-width: 50%; /* Set the desired max-width for the container */
+    margin: 0; /* Center the container */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container */
+    height: 30px; /* Maintain aspect ratio */
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #818181;
 }
