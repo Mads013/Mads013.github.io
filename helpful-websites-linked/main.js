@@ -14,3 +14,4 @@ function toggleNav() {
     var overlayContent = document.querySelector('.overlay-content');
     overlayContent.style.display = overlayContent.style.display === 'block' ? 'none' : 'block';
 }
+
