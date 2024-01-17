@@ -12,6 +12,15 @@ body {
     min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
     margin-bottom: 60px; /* Set margin at the bottom to accommodate the footer */
 }
+body.website-page {
+    background-image: url('personal-website-images/websites-background.jpg');}
+
+
+
+
+    body.home-page {
+        background-image: url('personal-website-images/home-backgorund.jpg');}
+
 .websites{
 margin: 50px;
 
