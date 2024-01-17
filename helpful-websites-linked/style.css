@@ -12,7 +12,24 @@ body {
     min-height: 100vh; /* Ensure body takes at least the full height of the viewport */
     margin-bottom: 60px; /* Set margin at the bottom to accommodate the footer */
 }
+.websites{
+margin: 50px;
 
+
+}
+
+.box li{
+
+    line-height: 30px;
+    
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
 /* Header styles */
 h1 {
     color: rgb(243, 56, 87);
@@ -34,7 +51,6 @@ ul {
     line-height: 25px;
 }
 
-/* Flexbox layout for rows */
 .row {
     display: flex;
     justify-content: space-between;
@@ -44,12 +60,37 @@ ul {
 /* Box styling */
 .category-box {
     flex: 1;
-    background-color: #f0f0f0;
+    background-color: #ffdee9eb;
     border-radius: 10px;
     padding: 20px;
     margin: 0 10px;
 }
 
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        margin: 0; /* Stack boxes on top of each other */
+    }
+
+    .category-box {
+        margin-bottom: 10px; /* Remove horizontal margin for full width */
+    }
+
+    /* Add padding and adjust font size for better mobile readability */
+    .category-box h2 {
+        font-size: 1.5rem; /* Adjust as needed */
+        margin-bottom: 10px; /* Add space between heading and list */
+    }
+
+    .category-box ul {
+        padding-left: 20px; /* Add padding to the left of the list */
+    }
+
+    .category-box li {
+        font-size: 1rem; /* Adjust as needed */
+    }
+}
 /* Link styles */
 a {
     color: #0d5c4c;
@@ -69,7 +110,7 @@ a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #0d5c4cf6;
     overflow-x: hidden;
     transition: 0.5s;
     display: flex;
@@ -83,7 +124,6 @@ a:hover {
 
 .overlay-content {
     position: relative;
-    top: 25%;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -94,7 +134,7 @@ a:hover {
     padding: 8px;
     text-decoration: none;
     font-size: 24px;
-    color: #818181;
+    color: #05221c;
     display: block;
     transition: 0.3s;
 }
@@ -156,7 +196,7 @@ a:hover {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: transparent;
+    color:  #ffe8e4;
 }
 
 .logo {
