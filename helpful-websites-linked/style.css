@@ -19,7 +19,7 @@ body.website-page {
 
 
     body.home-page {
-        background-image: url('personal-website-images/home-backgorund.jpg');}
+        background-image: url('personal-website-images/home-background.jpg');}
 
 .websites{
 margin: 50px;
@@ -238,4 +238,43 @@ footer a {
 
 footer a:hover {
     color: #f1f1f1;
-}
+}.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover img {
+    filter: grayscale(0%);
+  }
+  
+  .image-container:hover .image-text {
+    opacity: 1;
+  }
