@@ -43,6 +43,42 @@ body.home-page {
     }
 }
 
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* or any other appropriate value for mobile devices */
+    }
+
+    .swiper-container {
+        height: 100%; /* Set height to 100% for better mobile experience */
+    }
+
+    .container-general {
+        padding: 50px 0; /* Adjust padding for smaller screens */
+        width: 100%; /* Make the container full width on smaller screens */
+        
+    }
+
+    .gallery-wrap {
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .container-general .gallery-wrap .item {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .wrap-effect-2 .item:hover {
+        transform: none; /* Remove transform on hover for smaller screens */
+        box-shadow: none; /* Remove box-shadow on hover for smaller screens */
+        filter: none; /* Remove filter on hover for smaller screens */
+    }
+
+    .nav-phrase h1 {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+}
+
 .websites{
     margin: 50px;
 }
@@ -309,7 +345,7 @@ footer a:hover {
 }
 .swiper-slide {
     text-align: center;
-    background: #fff;
+    background: transparent;
    /* Center slide text vertically */
     display: flex;
     justify-content: center;
