@@ -18,7 +18,31 @@ body.website-page {
 }
 body.home-page {
     background-image: url('personal-website-images/home-background.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin-bottom: 60px;
 }
+
+
+
+body.website-page {
+    background-image: url('personal-website-images/websites-background.jpg');
+}
+
+body.home-page {
+    background-image: url('personal-website-images/home-background.jpg');
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        background-size: auto; /* or any other appropriate value for mobile devices */
+    }
+}
+
 .websites{
     margin: 50px;
 }
@@ -197,8 +221,9 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #f0f0f0;
-    position: fixed;
     width: 100%;
+    position:relative;
+        clear:both;
     bottom: 0;
 }
 footer a {
@@ -375,4 +400,14 @@ footer a:hover {
     100% {
         transform: rotate(0deg) translate3d(0, 0, 0);
    }
+}
+
+
+.nav-phrase {
+    text-align: center;
+}
+
+.nav-phrase h1{
+    color:#0d5c4c;
+    border: #05221c;
 }
