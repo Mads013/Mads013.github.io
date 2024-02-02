@@ -91,6 +91,14 @@ body {
 h1, h2, h3 {
     font-family: 'Lato', sans-serif;
 }
+
+p{
+text-decoration-style: none;
+
+}
+
+
+
 /* Header styles */
 h1 {
     color: rgb(243, 56, 87);
@@ -106,7 +114,7 @@ h2 {
 /* List styles */
 ul {
     list-style-type: none;
-    line-height: 25px;
+    line-height: 20px;
 }
 .row {
     display: flex;
@@ -153,6 +161,7 @@ a {
     color: #0d5c4c;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
     color: #1ba085;
