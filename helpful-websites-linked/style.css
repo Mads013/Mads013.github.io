@@ -3,21 +3,75 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
+
+
+  .gradient-background {
+    background: linear-gradient(0deg,#2970a0,#3f52ab,#0d5c4c,#000000);
+    background-size: 240% 240%;
+    animation: gradient-animation 20s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .heading{
+    padding-top:20px ;
+    padding-top:20px ;
+  }
+
+/* Styling for the scrolling text container */
+.scrolling-text {
+  /* Preventing text from wrapping to the next line */
+  white-space: nowrap;
+
+
+  /* Applying the animation to the text */
+  animation: scrollText 15s linear infinite;
+
+  /* Setting the text color to green */
+  color: rgb(255, 255, 255);
+
+  /* Setting the font size to large */
+  font-size: 100px;
+
+  font-family: 'Radnick', sans-serif;
+
+  
+
+  text-align: center;
+}
+
+/* Keyframes for the scrolling animation */
+@keyframes scrollText {
+  /* Initial position: off-screen to the right */
+  0% {
+      transform: translateX(100%);
+  }
+
+  /* Final position: off-screen to the left */
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+
   body {
-    background-image: url("personal-website-images/websites-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    /* Ensure body takes at least the full height of the viewport */
     margin-bottom: 60px;
     /* Set margin at the bottom to accommodate the footer */
   }
-  body.website-page {
-    background-image: url("personal-website-images/websites-background.jpg");
-  }
+
   body.home-page {
-    background-image: url("personal-website-images/home-background.jpg");
   
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,14 +79,7 @@
     min-height: 100vh;
     margin-bottom: 60px;
   }
-  
-  body.website-page {
-    background-image: url("personal-website-images/websites-background.jpg");
-  }
-  
-  body.home-page {
-    background-image: url("personal-website-images/home-background.jpg");
-  }
+
   
   /* Mobile responsiveness */
   @media (max-width: 768px) {
@@ -89,6 +136,12 @@
   h3 {
     font-family: "Lato", sans-serif;
   }
+
+  h2, .website{
+
+font-size: 30px;
+
+  }
   
   p {
     text-decoration-style: none;
@@ -96,10 +149,10 @@
   
   /* Header styles */
   h1 {
-    color: rgb(243, 56, 87);
+    color: #ffffff;
   }
   h2 {
-    color: rgb(255, 138, 158);
+    color:#2970a0;
   }
   /* School Essentials section */
   .school-essentials {
@@ -119,7 +172,7 @@
   /* Box styling */
   .category-box {
     flex: 1;
-    background-color: #ffdee9eb;
+    background-color:#c5cef9;
     border-radius: 10px;
     padding: 20px;
     margin: 0 10px;
@@ -199,7 +252,7 @@
   }
   .overlay a:hover,
   .overlay a:focus {
-    color: #f1f1f1;
+    color: #ffffff;
   }
   .overlay .closebtn {
     position: absolute;
@@ -217,7 +270,7 @@
     margin-right: 20px;
   }
   .navbar {
-    background-color: #ffe8e4;
+    background-color: #3f52ab;
     padding: 30px;
     display: flex;
     justify-content: flex;
@@ -242,7 +295,7 @@
   }
   .overlay a:hover,
   .overlay a:focus {
-    color: #ffe8e4;
+    color: #ffffff;
   }
   .logo {
     max-height: 50px;
@@ -262,7 +315,7 @@
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #0d5c4cf6;
+    background-color: transparent;
     width: 100%;
     position: relative;
     clear: both;
@@ -358,7 +411,7 @@
     align-items: center;
   }
   .container-general {
-    padding: 75px 0;
+    padding: 0px 0;
     margin: 0 auto;
     width: 800px;
   }

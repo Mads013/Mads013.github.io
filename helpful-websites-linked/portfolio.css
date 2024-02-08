@@ -12,6 +12,8 @@ body {
 
 
 
+
+
 .image-container {
   position: relative;
   width: 50%; /* Adjust as needed based on your preference */
@@ -120,7 +122,7 @@ body {
 }
 
 .navbar {
-  background-color: #ffe8e4;
+  background-color: #3f52ab;
   padding: 30px;
   display: flex;
   justify-content: flex;
@@ -200,10 +202,22 @@ text-decoration-style: none;
 
 /* Header styles */
 h1 {
-    color: rgb(243, 56, 87);
+    color: #3f52ab;
+      font-family: "Lato", sans-serif;
+text-align: center;
+padding:100px;
+
+    }
+
+h1, .portfoliohomepage{
+font-family: "Lato", sans-serif;
+color: linear-gradient(0deg,white, #2970a0,#3f52ab,#0d5c4c,#000000);
+font-size:100px;
+
 }
+
 h2 {
-    color: rgb(255, 138, 158);
+    color:#2970a0;
 }
 
 
@@ -250,7 +264,7 @@ body.home-page {
 }
 
 .navbar {
-  background-color: #ffe8e4;
+  background-color: #3f52ab;
   padding: 30px;
   display: flex;
   justify-content: flex;
@@ -308,3 +322,53 @@ footer a:hover {
   color: white;
   border: 2px solid white;
 }
+
+body {
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  text-decoration-style: none;
+}
+
+/* Header styles */
+h2 {
+  color:#2970a0;
+}
+/* School Essentials section */
+.school-essentials {
+  margin: 20px;
+  text-align: center;
+}
+/* List styles */
+ul {
+  list-style-type: none;
+  line-height: 20px;
+}
+
+
+
+
+.gradient-background {
+  background: linear-gradient(0deg,#2970a0,#3f52ab,#0d5c4c,#000000);
+  background-size: 240% 240%;
+  animation: gradient-animation 20s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
