@@ -39,7 +39,7 @@
   /* Applying the animation to the text */
   animation: scrollText 15s linear infinite;
 
-  /* Setting the text color to green */
+  /* Setting the text color */
   color: rgb(255, 255, 255);
 
   /* Setting the font size to large */
