@@ -23,24 +23,39 @@
 	padding-top:20px ;
 	padding-top:20px ;
 }
+
+
+.page-top-gradient {
+	width: 100%;
+	height: 100px; /* Adjust the height as needed */
+	background: linear-gradient(to right, #F15C2A, #E55151, #0F64B2); /* Updated with your desired colors */
+}
+
+@font-face {
+    font-family: 'Ambidexter';
+    src: url('path/to/your/Ambidexter.woff') format('woff'),
+         url('path/to/your/Ambidexter.ttf') format('truetype');
+    /* Add more font sources if your font has different formats */
+}
+
 /* Styling for the scrolling text container */
 .scrolling-text-left,
 .scrolling-text-right {
   /* Preventing text from wrapping to the next line */
   white-space: nowrap;
   /* Applying the animation to the text */
-  animation: scrollText 15s linear infinite;
+  animation: scrollText 10s linear infinite;
   /* Setting the text color */
   color: rgb(255, 255, 255);
   /* Setting the font size to large */
   font-size: 100px;
-  font-family: 'Radnick', sans-serif;
+  font-family: 'Ambidexter','Radnick',  sans-serif;
   text-align: center;
 }
 
 /* Reverse animation for scrolling-text-right */
 .scrolling-text-right {
-  animation: scrollText 15s linear infinite reverse;
+  animation: scrollText 20s linear infinite reverse;
 }
 
 @keyframes scrollText {
@@ -75,6 +90,9 @@ body.home-page {
 	min-height: 100vh;
 	margin-bottom: 60px;
 }
+
+
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
 	body {
@@ -267,7 +285,6 @@ a:hover {
 }
 .navbar {
 	background-color: black;
-	padding: 30px;
 	display: flex;
 	justify-content: flex;
 	align-items: center;
@@ -546,6 +563,4 @@ footer a:hover {
 		transform: rotate(360deg);
 	}
 }
-.home-page-background{
-	color:black;
-}
+

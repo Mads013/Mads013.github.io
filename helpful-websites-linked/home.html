@@ -1,56 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My College Resources</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
+
+
 <body>
-<div class="home-page-background"></div>
-<div class="website-page background"
-class="website-page">
-    <div class="navbar">
-        <div class="container" id="resourceContainer">
-            <!-- Image Button to Open Overlay --> <button class="menu-button" onclick="toggleNav()"><img src="personal-website-images/logo-01.png" alt="Menu"></button> <!-- Overlay Navigation -->
-            <div class="overlay" id="overlay"> <a href="#" class="closebtn" onclick="toggleNav()">×</a>
-                <div class="overlay-content">                    <a href="portfoliohomepage.html">Portfolio</a>  
-                 <a href="#">About</a> <a href="links.html">Websites</a> <a href="https://launchpad.37signals.com/bc3/3822453/signin" target="_blank">Base Camp</a> <a href="#">Canvas</a> <a href="https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1704404115%26return_to%3D%252Fclient%252FT019E043SMT%252FC0192A76015%26teams%3DT019E043SMT" target="_blank">Slack</a> <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+    
+    <div class="home-page-background"></div>
+    <div class="website-page background">
+        <div class="navbar">
+            <div class="container" id="resourceContainer">
+                <button class="menu-button" onclick="toggleNav()"><img src="personal-website-images/logo-01.png" alt="Menu"></button>
+                <div class="overlay" id="overlay">
+                    <a href="#" class="closebtn" onclick="toggleNav()">×</a>
+                    <div class="overlay-content">
+                        <a href="portfoliohomepage.html">Portfolio</a>  
+                        <a href="#">About</a>
+                        <a href="links.html">Websites</a>
+                        <a href="https://launchpad.37signals.com/bc3/3822453/signin" target="_blank">Base Camp</a>
+                        <a href="#">Canvas</a>
+                        <a href="https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1704404115%26return_to%3D%252Fclient%252FT019E043SMT%252FC0192A76015%26teams%3DT019E043SMT" target="_blank">Slack</a>
+                        <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+                    </div>
                 </div>
             </div>
-            
+            <div class="nav-phrase"></div>
         </div>
-        <div class="nav-phrase">
+
+        
+        <div class="home-page-section-one">
+            <div class="header-one">
+            <h1>MADISON</h1>
             </div>
+
+
+    
+            
+            <div class="header-two">
+            <h1>MARTINEZ</h1>
+            </div>
+            <h2>FEELANCE GRAPHIC DESIGNER</h2>
+            <h4>Portland, Oregon</h4>
+        </div>
     </div>
-
-
-
-
-
 </div>
 
+<div class="section-two">
+    <div class="section-two-image"></div>
+    <div class="section-two-content">
+        <h2>Who am I?</h2>
+        <p>
+           Madison Martinez, an artist diving into graphic design. I have a background in  surrealistic illustration paintings, and am now pursuing a Bachelor of Fine Arts for Graphic Design at Portland State University. I'm  passionate about mixed media and mixing  creativity with technology – coding, web design, crafting brand identities, etc. Design isn't just a job for me; it's my passion for innovation and self-expression.
+        </p>
+    </div>
+</div>
+</div>
+
+    <div class="section-three">
+        <div class="section-three-content">
+        <h2>Design to Create</h2>
+        </div>
+    </div>
 
 
 
-    <!--<div class="swiper-container">
-        <div class="swiper-slide">
-            <div class="container-general">
-                <div class="gallery-wrap wrap-effect-2">
-                    <a href="https://example.com/" target="_blank" class="item"></a>
-                    <a href="https://example.com/" target="_blank" class="item"></a>
-                    <a href="https://example.com/" target="_blank" class="item"></a>
-                    <a href="https://example.com/" target="_blank" class="item"></a>
-                    <a href="https://example.com/" target="_blank" class="item"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="home-page-background">
+        <section>
+            <div class="carousel-container">
+            <div class="carousel">
+                <div id="images">
+                    <img class="img" src="my-work/gumball-1.jpg" />
+                    <img class="img" src="my-work/gumball-2.jpg" />
+                    <img class="img" src="my-work/gumball-3.jpg" />
+                    <img class="img" src="my-work/pizza-cover.jpg" />
+                    <img class="img" src="my-work/sketch-a-dream-hero.png" />
+                    <img class="img" src="my-work/sketch-a-dream-website.png" />
+                    <img class="img" src="my-work/futura-poster.jpg" />
+                    <img class="img" src="my-work/sky-brew-midnight.jpg" />
+                    <img class="img" src="my-work/sky-brew-sunny-grass.jpg" />
+                    <img class="img" src="my-work/sky-brew-marsh.jpg" />
+                    <img class="img" src="my-work/sky-brew-three-cans.jpg" />
+                    <img class="img" src="my-work/ambrosia.jpg" />
+                    <img class="img" src="my-work/ambrosia-mockup.jpg" />
+                    <img class="img" src="my-work/grim-book.jpg" />
                 </div>
             </div>
-        </div>
-        <div class="swiper-slide"> </div>
+        </section>
     </div>
-    </div>
-    !-->
-
+</div>
     <script src="main.js"></script>
 </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <base href="http://www.ttmt.org.uk/slideshow/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <!--jQuery-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    
+    <!--css-->
+    
+    <style type="text/css">
+      .carousel{
+        overflow:hidden;
+        white-space:nowrap;
+      }
+      .img{
+        max-width:900px;
+        height:auto;
+      }
+      #images{
+        position: relative;
+      }
+    </style>
+    
+    <!--[if lt IE 9]>
+         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <title>Title of the document</title>
+  </head>
+  
+  <body>
+    <section >
+      <div class="carousel">
+        <div id="images">
+          <img class="img" src="images/slide-show-1.jpg" />
+          <img class="img" src="images/slide-show-2.jpg" />
+          <img class="img" src="images/slide-show-3.jpg" />
+          <img class="img" src="images/slide-show-4.jpg" />
+         </div>
+      </div>
+    </section>
+    
+    <script>
+      function slide(){
+        var currImage = $('.img').first(),
+            currImageWidth = currImage.width();			
+        
+        $imageContainer.animate({right: currImageWidth}, function(){
+          setTimeout(function(){
+            $imageContainer.append(currImage.clone());
+            currImage.remove();
+            $imageContainer.css("right", 0);
+          }, 500);
+        });
+      }
+    
+      setInterval(function() {
+        slide();
+      }, 2000);
+      
+      // Strip out text nodes otherwise there is a jump when the initial slides are removed.
+      // This is UGLY. Head over to the CSS forum and ask someone who knows what they're doing, how to do this properly
+      //
+      var holder = document.getElementById("images");
+      for (var i =0; i < holder.childNodes.length; i++){
+        if(holder.childNodes[i].nodeType === 3){
+          holder.removeChild(holder.childNodes[i])
+        }
+      }
+      
+      var $imageContainer = $("#images");
+    </script>
+  </body>
+</html>
