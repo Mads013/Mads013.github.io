@@ -24,4 +24,14 @@ const swiper = new Swiper('.swiper-container', {
       onlyInViewport: false
     }
   });
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    // Your page has loaded, hide the loading spinner
+    var loadingSpinner = document.getElementById("loadingSpinner");
+    loadingSpinner.style.display = "none";
+});
+
+window.addEventListener("load", function () {
+    // The entire page has finished loading, hide the loading spinner
+    var loadingSpinner = document.getElementById("loadingSpinner");
+    loadingSpinner.style.display = "none";
+});

@@ -1,0 +1,300 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 2657px;
+    margin: 0 auto;
+    background: #252525;
+    overflow: hidden;
+  }
+  .flex-row-ade {
+    position: relative;
+    width: 1796px;
+    height: 161px;
+    margin: 0 0 0 -356px;
+    z-index: 9;
+  }
+  .rectangle {
+    position: absolute;
+    width: 1440px;
+    height: 161px;
+    top: 0;
+    left: 356px;
+    background: #ffffff;
+  }
+  .rectangle-1 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 1009px;
+    background: #d9d9d9;
+    z-index: 2;
+  }
+  .rectangle-2 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 99px;
+    background: #d9d9d9;
+    z-index: 3;
+  }
+  .rectangle-3 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 857px;
+    background: #d9d9d9;
+    z-index: 4;
+  }
+  .rectangle-4 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 554px;
+    background: #d9d9d9;
+    z-index: 8;
+  }
+  .rectangle-5 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 1312px;
+    background: #d9d9d9;
+    z-index: 12;
+  }
+  .rectangle-6 {
+    position: absolute;
+    width: 128px;
+    height: 116px;
+    top: 23px;
+    left: 402px;
+    background: #d9d9d9;
+    z-index: 13;
+  }
+  .rectangle-7 {
+    position: absolute;
+    width: 127px;
+    height: 116px;
+    top: 23px;
+    left: 706px;
+    background: #d9d9d9;
+    z-index: 6;
+  }
+  .rectangle-8 {
+    position: absolute;
+    width: 127px;
+    height: 116px;
+    top: 23px;
+    left: 1161px;
+    background: #d9d9d9;
+    z-index: 10;
+  }
+  .rectangle-9 {
+    position: absolute;
+    width: 127px;
+    height: 116px;
+    top: 23px;
+    left: 251px;
+    background: #d9d9d9;
+    z-index: 11;
+  }
+  .regroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 431px;
+    height: 161px;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+  .rectangle-a {
+    flex-shrink: 0;
+    position: relative;
+    width: 128px;
+    height: 116px;
+    background: #d9d9d9;
+    z-index: 9;
+  }
+  .rectangle-b {
+    flex-shrink: 0;
+    position: relative;
+    width: 127px;
+    height: 116px;
+    background: #d9d9d9;
+    z-index: 7;
+  }
+  .rectangle-c {
+    flex-shrink: 0;
+    position: relative;
+    width: 128px;
+    height: 116px;
+    background: #d9d9d9;
+    z-index: 5;
+  }
+  .rectangle-d {
+    position: relative;
+    width: 1440px;
+    height: 65px;
+    margin: 0 0 0 0;
+    background: #000000;
+    z-index: 22;
+  }
+  .madison-martinez {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 327px;
+    height: 65px;
+    top: 0;
+    left: 75px;
+    color: #ffffff;
+    font-family: Outfit, var(--default-font-family);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37.8px;
+    text-align: center;
+    z-index: 24;
+  }
+  .ellipse {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 10px;
+    left: 31px;
+    background: url(./assets/images/5e8a8759-b852-49d7-a803-76d0f70b9736.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 23;
+    border-radius: 50%;
+  }
+  .rectangle-e {
+    position: absolute;
+    width: 1440px;
+    height: 161px;
+    top: 0px;
+    left: 0px;
+    background: url(./assets/images/ea512793-d303-458b-9f46-085c8927fc39.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 1;
+  }
+  .rectangle-f {
+    position: absolute;
+    width: 1440px;
+    height: 5px;
+    top: 226px;
+    left: 0px;
+    background: url(./assets/images/72a63098-106e-40de-8795-15beb49ac904.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 26;
+  }
+  .flex-row {
+    position: absolute;
+    width: 1440px;
+    height: 2431px;
+    top: 226px;
+    left: 0px;
+    z-index: 41;
+  }
+  .rectangle-10 {
+    position: absolute;
+    width: 29px;
+    height: 2431px;
+    top: 0;
+    left: 1411px;
+    background: url(./assets/images/ffafc7f3-10d7-4907-aca6-0473e3d2fffd.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 25;
+  }
+  .portland-oregon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 262px;
+    height: 53px;
+    top: 443px;
+    left: 1131px;
+    color: #b3958b;
+    font-family: Oswald, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 53px;
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: 3.24px;
+    z-index: 17;
+  }
+  .oh-hey {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: absolute;
+    width: 133px;
+    height: 36px;
+    top: 460px;
+    left: 372px;
+    color: #b3958b;
+    font-family: Oswald, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 35.568px;
+    text-align: right;
+    white-space: nowrap;
+    letter-spacing: 2.16px;
+    z-index: 19;
+  }
+  .rectangle-11 {
+    position: absolute;
+    width: 505px;
+    height: 27px;
+    top: 507px;
+    left: 0;
+    background: url(./assets/images/57a4909e-49aa-405a-b557-a6204c513e76.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 28;
+  }
+  .rectangle-12 {
+    position: absolute;
+    width: 29px;
+    height: 1911px;
+    top: 507px;
+    left: 476px;
+    background: url(./assets/images/62ea2f41-b92e-40c0-8058-81ce974e2403.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 27;
+  }
