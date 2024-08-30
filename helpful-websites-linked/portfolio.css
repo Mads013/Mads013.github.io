@@ -128,7 +128,6 @@
 
 .navbar {
 	background-color: black;
-	padding: 30px;
 	display: flex;
 	justify-content: flex;
 	align-items: center;
@@ -336,3 +335,20 @@ ul {
       background-position: 0% 50%;
  }
 }
+
+.title {
+	font-weight: bold;
+	font-family: 'Ambidexter';
+	font-size: 75px; 
+	color: #ffffff;
+  }
+
+
+  .title h2{
+	color:#ffffff;
+	font-family: 'Ambidexter';
+	font-size: 75px;
+padding-bottom: 25px;
+padding-top: 25px;
+	background:linear-gradient(to right, #F15C2A, #E55151, #0F64B2); /* Updated with your desired colors */
+  }

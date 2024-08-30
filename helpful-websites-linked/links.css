@@ -1,0 +1,276 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+/* Add this CSS to your links.css file */
+body {
+    font-size: 20px; /* Adjust the base font size as needed */
+}
+
+/* Example of increasing font size for specific elements */
+h1 {
+    font-size: 2.5em; /* This will make h1 elements larger than the base font size */
+}
+
+h2 {
+    font-size: 2em; /* This will make h2 elements larger than the base font size */
+}
+
+p {
+    font-size: 1.2em; /* This will make paragraphs slightly larger than the base font size */
+}
+
+/* Adjust other elements' font sizes as needed */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Adjust colors as needed */
+}
+
+@font-face {
+	font-family: 'Ambidexter';
+	src: url('path/to/your/Ambidexter.woff') format('woff'),
+		url('path/to/your/Ambidexter.ttf') format('truetype');
+	/* Add more font sources if your font has different formats */
+}
+
+@keyframes gradient-animation {
+	0%, 100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.heading {
+	padding-top: 20px;
+}
+
+.background {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to right, #F15C2A, #E55151, #0F64B2);
+}
+
+.loading-spinner-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 9999;
+}
+
+.loading-spinner {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	animation: spin 1s linear infinite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -40px 0 0 -40px;
+}
+
+.navbar {
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+.menu-button img {
+	max-height: 50px;
+	max-width: 100%;
+}
+
+.container {
+	background-size: contain;
+}
+
+.logo {
+	max-height: 50px;
+	max-width: 100%;
+	box-align: center;
+	image-orientation: unset;
+}
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+}
+
+body {
+	margin-bottom: 150px;
+	font-family: "Lato", sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: "Lato", sans-serif;
+	color: #ffffff;
+}
+
+h2 {
+	opacity: 50%;
+	font-size: 30px;
+}
+
+p {
+	text-decoration-style: none;
+}
+
+ul {
+	list-style-type: none;
+	line-height: 20px;
+	padding-top: 20px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.category-box {
+	flex: 1;
+	background: black;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+	.body {
+		background-size: auto;
+	}
+	.swiper-container {
+		height: 100%;
+	}
+	.container-general {
+		padding: 50px 0;
+		width: 100%;
+	}
+	.gallery-wrap, .container-general .gallery-wrap .item {
+		height: auto;
+	}
+	.wrap-effect-2 .item:hover {
+		transform: none;
+		box-shadow: none;
+		filter: none;
+	}
+	.nav-phrase h1 {
+		font-size: 24px;
+	}
+	.row {
+		flex-direction: column;
+		margin: 0;
+	}
+	.category-box {
+		margin-bottom: 10px;
+	}
+	.category-box h2 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+	.category-box ul {
+		padding-left: 20px;
+	}
+	.category-box li {
+		font-size: 1rem;
+		padding-top: 20px;
+	}
+}
+
+a {
+	color: #b0a3a3;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #1ba085;
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #000000ee;
+	overflow-x: hidden;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.overlay.open {
+	width: 100%;
+}
+
+.overlay-content {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	display: none;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 60px;
+	color: #14bf9d;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay-content {
+	text-align: center;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #ffffff;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	height: 50px;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	cursor: pointer;
+	color: #818181;
+}
+
+.menu-button {
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	margin-right: 20px;
+}
+
+.image-container {
+	max-height: 30px;
+	max-width: 100%;
+	margin: 0;
+}
+
+.image-container img {
+	width: 100%;
+	height: 50px;
+	background-size: contain;
+}

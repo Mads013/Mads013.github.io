@@ -6,26 +6,23 @@
     <title>My College Resources</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
 </head>
-
-
 <body>
-    
     <div class="home-page-background"></div>
     <div class="website-page background">
         <div class="navbar">
             <div class="container" id="resourceContainer">
-                <button class="menu-button" onclick="toggleNav()"><img src="personal-website-images/logo-01.png" alt="Menu"></button>
+                <button class="menu-button" onclick="toggleNav()">
+                    <img src="personal-website-images/logo-01.png" alt="Menu">
+                </button>
                 <div class="overlay" id="overlay">
                     <a href="#" class="closebtn" onclick="toggleNav()">×</a>
                     <div class="overlay-content">
-                        <a href="portfoliohomepage.html">Portfolio</a>  
+                        <span class="title"><h2>Main Website</h2></span>
+                        <a href="portfoliohomepage.html">Portfolio</a>
                         <a href="#">About</a>
                         <a href="links.html">Websites</a>
+                        <span class="title"><h2>External Websites</h2></span>
                         <a href="https://launchpad.37signals.com/bc3/3822453/signin" target="_blank">Base Camp</a>
                         <a href="#">Canvas</a>
                         <a href="https://app.slack.com/workspace-signin?redir=%2Fgantry%2Fauth%3Fapp%3Dclient%26lc%3D1704404115%26return_to%3D%252Fclient%252FT019E043SMT%252FC0192A76015%26teams%3DT019E043SMT" target="_blank">Slack</a>
@@ -36,80 +33,114 @@
             <div class="nav-phrase"></div>
         </div>
 
-        
         <div class="home-page-section-one">
             <div class="header-one">
-            <h1>MADISON</h1>
+                <h1>MADISON</h1>
             </div>
-
-
-    
-            
             <div class="header-two">
-            <h1>MARTINEZ</h1>
+                <h1>MARTINEZ</h1>
             </div>
-            <h2>FEELANCE GRAPHIC DESIGNER</h2>
+            <h2>FREELANCE GRAPHIC DESIGNER</h2>
             <h4>Portland, Oregon</h4>
         </div>
-    </div>
-</div>
 
-<div class="section-two">
-    <div class="section-two-image"></div>
-    <div class="section-two-content">
-        <h2>Who am I?</h2>
-        <p>
-           Madison Martinez, an artist diving into graphic design. I have a background in  surrealistic illustration paintings, and am now pursuing a Bachelor of Fine Arts for Graphic Design at Portland State University. I'm  passionate about mixed media and mixing  creativity with technology – coding, web design, crafting brand identities, etc. Design isn't just a job for me; it's my passion for innovation and self-expression.
-        </p>
-    </div>
-</div>
-</div>
+        <div class="section-two-background">
+            <div class="row">
+                <div class="category-box">
+                    <h1>01.</h1>
+                    <h2>Illustrations</h2>
+                    <div class="box"></div>
+                </div>
+                <div class="category-box">
+                    <h1>02.</h1>
+                    <h2>Branding</h2>
+                    <div class="box"></div>
+                </div>
+            </div>
 
-    <div class="section-three">
-        <div class="section-three-content">
-        <h2>Design to Create</h2>
+            <div class="row">
+                <div class="category-box">
+                    <h1>03.</h1>
+                    <h2>Packaging</h2>
+                    <div class="box"></div>
+                </div>
+                <div class="category-box">
+                    <h1>04.</h1>
+                    <h2>Analogue</h2>
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-three">
+            <a href="links.html" class="helpful-websites-link">
+                <h1>Helpful Websites</h1>
+            </a>
+            <div class="gradient-line"></div>
+        </div>
+
+        <div class="section-four">
+            <div class="content-container">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="me/website-home-page-me.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="me/head-in-the-clouds.png" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="me/enter-the-grid-madi-martinez.png" style="width:100%">
+                    </div>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+                <div class="text-box">
+                    <h2>Madison Martinez</h2>
+                    <h3>Multi-Media Designer</h3>
+                    <br>
+                    <p>I have a background in surrealistic illustration paintings, and am now pursuing a Bachelor of Fine Arts for Graphic Design at Portland State University. I'm passionate about mixed media and mixing creativity with technology, coding, web design, crafting brand identities, etc. Design isn't just a job for me; it's my passion for innovation and self-expression.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="home-page-background">
-        <section>
-            <div class="carousel-container">
-            <div class="carousel">
-                <div id="images">
-                    <img class="img" src="my-work/gumball-1.jpg" />
-                    <img class="img" src="my-work/gumball-2.jpg" />
-                    <img class="img" src="my-work/gumball-3.jpg" />
-                    <img class="img" src="my-work/pizza-cover.jpg" />
-                    <img class="img" src="my-work/sketch-a-dream-hero.png" />
-                    <img class="img" src="my-work/sketch-a-dream-website.png" />
-                    <img class="img" src="my-work/futura-poster.jpg" />
-                    <img class="img" src="my-work/sky-brew-midnight.jpg" />
-                    <img class="img" src="my-work/sky-brew-sunny-grass.jpg" />
-                    <img class="img" src="my-work/sky-brew-marsh.jpg" />
-                    <img class="img" src="my-work/sky-brew-three-cans.jpg" />
-                    <img class="img" src="my-work/ambrosia.jpg" />
-                    <img class="img" src="my-work/ambrosia-mockup.jpg" />
-                    <img class="img" src="my-work/grim-book.jpg" />
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column left">
+                <h2>Contact Information</h2>
+                <p>Email: madart.pdx@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: Portland, OR</p>
             </div>
-        </section>
-    </div>
-</div>
+            <div class="footer-column right">
+                <div class="social-buttons">
+                    <a href="https://www.instagram.com/mad_made.art/" target="_blank" class="social-button">
+                        <img src="icons/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/madison-martinez-60769620b/" target="_blank" class="social-button">
+                        <img src="icons/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://pin.it/6wzQK4he9" target="_blank" class="social-button">
+                        <img src="icons/pinterest.png" alt="Pinterest">
+                    </a>
+                </div>
+                <div class="half-gradient-line"></div>
+                <button class="top-button" onclick="scrollToTop()">Top</button>
+            </div>
+        </div>
+    </footer>
+
     <script src="main.js"></script>
+    <script src="home.js"></script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
