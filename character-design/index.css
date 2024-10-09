@@ -1,0 +1,52 @@
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #333E26;
+}
+
+p, ul, li {
+    font-family: 'Noto Sans', sans-serif;
+    color: #656155;
+}
+
+@font-face {
+    font-family: 'Radnick';
+    src: url('fonts/Radnick.otf') format('opentype'); 
+}
+
+
+header h1 {
+    font-family: Radnick;
+    font-size: 4rem;
+    color: #A33332;
+}
+
+
+body {
+    font-size: 16px; 
+    background-color: #F8F4E9;
+    padding: 2rem;
+}
+
+
+a {
+    color: #A33332;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+
+.section {
+    padding: 2rem;
+}
+
+.link {
+    padding: 2rem;
+}
+
+.section h2 {
+    font-family: Radnick;
+}
