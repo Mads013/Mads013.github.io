@@ -14,11 +14,43 @@ p, ul, li {
     src: url('fonts/Radnick.otf') format('opentype'); 
 }
 
+header {
+    text-align: center; 
+    padding: 4rem 0 4rem 0; 
+    background-image: url('assets/images/spices-1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+header img{
+width:100%;
+height: auto;
+max-width: 50rem;
+
+}
 
 header h1 {
     font-family: Radnick;
-    font-size: 4rem;
-    color: #A33332;
+    font-size: 7rem;
+    color: #F8F4E9;
+    text-align: center;
+}
+
+
+header h2 {
+    font-size: 5rem;
+    color: #F8F4E9;
+    text-align: center;
+
+}
+header h3 {
+    font-size: 3rem;
+    color: #862c2c;
+    text-align: center;
+
 }
 
 
@@ -49,4 +81,10 @@ a:hover {
 
 .section h2 {
     font-family: Radnick;
+}
+
+.personal {
+
+    background: #333e261c;
+    padding:5rem;
 }
