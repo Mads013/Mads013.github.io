@@ -16,11 +16,12 @@ p, ul, li {
 
 header {
     text-align: center; 
-    padding: 4rem 0 4rem 0; 
+    padding: 1rem 0 4rem 0; 
     background-image: url('assets/images/spices-1.png'); 
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
+        opacity: 0.;
 }
 
 
@@ -87,4 +88,5 @@ a:hover {
 
     background: #333e261c;
     padding:5rem;
+    flex: block;
 }
