@@ -1,0 +1,359 @@
+/* General Styling */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+h1{
+font-family: 'Outfit', sans-serif;
+}
+
+h2{
+    font-family: 'Montserrat Alternates', 'Montserrat', sans-serif;
+    color:#FF7104;
+}
+
+h3,h4,h5 {
+
+    font-family: 'Montserrat Alternates', 'Montserrat', sans-serif;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+
+}
+
+a{ 
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+
+
+}
+
+body {
+	background: url('images/homepage/coffee-stains.jpg') #F7E6C2;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+
+
+
+
+/* Navigation */
+.nav-menu {
+	justify-content: space-between;
+	background-color: #F7E6C2;
+	display: flex;
+    
+}
+.no-hover{
+	flex-shrink: 2;
+	flex-grow: 2;
+    background-color: #000000;
+
+
+}
+.nav-menu a {
+    font-size: 1.25rem;
+    color: #31150C;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    border: 2px solid #FF7104;
+    padding: 2rem 1rem;
+}
+a:link, a:visited {
+	color: #31150C;
+}
+.nav-menu a:hover {
+    background: #FF7104;
+    color: #F7E6C2;
+    flex-grow: 2;
+}
+a:active {
+	background: #FF7104;
+	color: black;
+	flex-grow: 2;
+}
+.active-nav {
+	padding-bottom: 0;
+}
+
+
+/* Hero Section */
+.hero {
+
+
+	height: 50vh;
+	border: 2px solid #FF7104;
+
+
+
+	background-color: #F7E6C2;
+	background-size: cover;
+	background-position: left center;
+	background-blend-mode: multiply;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+    background-size:
+    
+    
+    /*background-attachment: fixed;*/
+}
+.hero h1 {
+	color: #FF7104;
+    
+        display: flex;
+        flex-wrap: wrap;
+
+    
+    align-items: center;
+    
+font-size:3.5rem;
+    
+    
+    
+    
+    
+        font-weight: 900;
+        letter-spacing: 2px;
+    
+    
+        /* text-transform: uppercase;*/
+        /* font-size-clamp;https://utopia.fyi/clamp/calculator/*/
+    }
+
+
+
+/* Introduction Section home page */
+.section-1 {
+	text-align: center;
+	font-size: 1em;
+    padding: 4em;
+}
+.section-1 h2 {
+	color: #FF7104;
+	padding: 1rem;
+}
+.section-1 p {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+
+
+
+/* Explore Section */
+.explore-menu h3 {
+	background-color: #000000;
+	color: #FF7104;
+	text-align: center;
+	padding: 30px 0;
+
+}
+.explore-menu-nav {
+
+
+	color: #FF7104;
+	list-style: none;
+	text-align: center;
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+
+	width: 100%;
+}
+.explore-menu-nav li {
+	text-align: center;
+    padding:15px 0;
+    
+    
+
+}
+.explore-menu-nav li a {
+
+    
+	color: #FF7104;
+	text-decoration: none;
+}
+
+.explore-menu-nav li a:hover {
+
+
+
+
+    background: transparent;
+    text-decoration: underline double;
+    color: #FF7104;
+}
+
+.kopi-joss {
+	background-color: #31150C;
+	width: 100%;
+
+}
+.turkish-sand {
+	background-color: #593F28;
+	width: 100%;
+
+}
+.kaffeost {
+	background-color: #986c44;
+	width: 100%;
+
+}
+.ca-phe-trung {
+	background-color: #F7E6C2;
+	width: 100%;
+
+}
+
+
+/*hero images*/
+
+.hero-hp{
+
+background-image: url(images/homepage/hp-hero.png);
+
+}
+
+
+.hero-ca-phe{
+
+    background-image: url(images/ca-phe-trung/hero-ca-phe-trung.png);
+    
+    }
+
+    
+.hero-kopi-joss{
+
+    background-image: url(images/kopi-joss/kopi-joss.png);
+    
+    }
+    
+    
+    .hero-kaffeost{
+    
+        background-image: url(images/kaffeost/kaffeost.png);
+        
+        }
+    
+.hero-turkish-sand{
+
+    background-image: url(images/turskish-sand/turkish-sand.png);
+    
+    }
+    
+            
+    
+
+
+
+    /* text Section */
+
+.section-1{
+display: flex;
+flex-direction: column;
+
+
+
+
+}
+.text-section {
+    display: flex;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+    .paragraph {
+        display: flex;
+        flex-direction: column;
+        margin: 20px; /* Space between paragraphs */
+        flex-wrap: wrap;
+        text-align: left;
+
+
+        flex-grow: 1;
+        flex-shrink: 1;
+ 
+        justify-content:center; 
+    }
+    
+    
+
+    
+    /* Icon Section */
+    .icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        padding: 0 75px;
+
+        
+	
+
+    }
+    
+
+
+    .icons img {
+        gap: 1em;
+        max-width: 150px;
+        height: auto;
+        background-blend-mode: multiply;
+    }
+
+
+
+ hr {
+        border: 4px solid #FF7104;
+        padding: 5px;
+
+
+    }
+    /* How It's Made Section */ 
+    
+    .main-coffee-drawing {
+        display: flex;                  
+        flex-direction: row;           
+        align-items: center;         
+
+    }
+    
+    .coffee-image {
+        max-width: 480px;                 
+        min-width: 250px;      
+        height: auto;                  
+        object-fit: cover;            
+    }
+    
+    .how-its-made {
+        display: flex;                 
+        flex-direction: column;        
+        flex-grow: 3;  
+        flex-shrink:1;                
+        flex-wrap: wrap;               
+
+    }
