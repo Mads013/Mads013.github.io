@@ -1,0 +1,67 @@
+@media (max-width: 640px) {
+
+
+  h1{
+
+    font-size: 3rem;
+
+    
+    }
+
+
+    .menu-inclusion {
+      flex-direction: column; /* Switch to column layout */
+      align-items: flex-start; /* Align items to the start of the column */
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+  
+    .menu-inclusion img {
+      width: 100%; /* Image takes full width */
+      max-width: none; /* Removes the max-width constraint */
+    }
+  
+    .menu-inclusion p {
+      margin-bottom: 10px; /* Add spacing below the text */
+    }
+  }
+
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .about-section {
+      flex-direction: column; /* Stacks content vertically */
+      align-items: center; /* Centers the content */
+  }
+
+  .about-image {
+      width: 100%; /* Image takes full width on smaller screens */
+      margin-bottom: 20px; /* Adds spacing below the image */
+  }
+
+  .about-section p {
+      text-align: center; /* Centers the text below the image */
+  }
+}
+
+
+
+
+
+/*menus*/
+@media (max-width: 640px) {
+.menu-inclusion {
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex; /* Enables flex layout */
+  flex-direction: column;
+  align-items: center; /* Vertically aligns content */
+  text-align: left;
+  gap:30px; 
+}
+}

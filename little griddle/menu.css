@@ -1,0 +1,195 @@
+
+  /* Layout */
+  .container {
+    display: flex;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    color: #CAA099;
+    font-size: 4rem;
+  }
+  header p {
+    font-style: italic;
+  }
+  
+  /* Allergen Key */
+  .allergen-key {
+    background: #CAA099;
+    padding: 25px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+
+
+    
+    max-width: 90%;
+}
+
+
+
+.allergen-section {
+  position: absolute; /* Place the allergen section on top of the image */
+  padding: 25%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Covers the hero section */
+  display: flex;
+  justify-content: left;
+  align-items: center; /* Centers the content vertically */
+  z-index:1;
+
+  box-sizing: border-box;
+}
+
+
+
+
+  
+  .allergen-key h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .allergen-key ul {
+    list-style: none;
+  }
+  .allergen-key li {
+    margin: 5px 0;
+  }
+  
+  /* Menu Sections */
+  .menu-section {
+    margin-bottom: 30px;
+    
+  }
+
+
+  
+  .menu-section h2 {
+    color: #CAA099;
+    border-bottom: 2px solid #CAA099;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    gap: 20px;
+  }
+  .menu-section article {
+    margin-bottom: 20px;
+    display: flex;   
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+  }
+  .menu-section h3 {
+    color: #00798c;
+    flex: 1 1 50%;
+  }
+  .menu-section p {
+    margin: 5px 0;
+    flex: 1 1 50%;
+  }
+  .price {
+    color: #CAA099;;
+    font-weight:bolder;
+  }
+
+
+  .menu-section img {
+    width: 100%; 
+    max-width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Allergen Key */
+.allergen-key {
+  background: #CAA099;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  max-width: 90%;
+  margin: auto; 
+  z-index: 2; 
+}
+
+/* Allergen Section (Hero Overlay) */
+.allergen-section {
+  position: absolute; /* Overlay allergen key over the hero image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start; /* Align allergen key to the left */
+  align-items: flex-start; /* Align allergen key to the top-left */
+  padding: 20px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Make height responsive */
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0%;
+}
+
+.menu-inclusion p strong{
+  color: #CAA099;
+  font-size:large;
+  
+
+}
+
+
+
+.menu-inclusion {
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex; /* Enables flex layout */
+  flex-direction: row; /* Aligns items in a row */
+  align-items: center; /* Vertically aligns content */
+  text-align: left;
+  gap:30px; 
+}
+
+.menu-inclusion img {
+  width: 50%;
+  
+  height: 50vh;
+  border-radius: 10px; 
+}
+
+.menu-inclusion p {
+  flex: 1;
+  margin: 0; 
+  line-height: 1.6; }
+
